@@ -1,0 +1,244 @@
+﻿Table of Contents
+Cleaning Up the Model	1
+Avoid Overhang	1
+Make Watertight Connections	6
+Shells, Infill and Wall Thickness	8
+Slicing Software and Terminology	12
+Choose Your Slicing Software	13
+Layer Height	15
+Shells	16
+Infill	17
+Speed	19
+Skirt & Brim	20
+Support Material	21
+Additional Settings	21
+Let's slice it already!	22
+
+@Jason: Could you update the “Insert <filename>” directives throughout this chapter? With all the new screenshots, I was unsure which ones were correct. 
+I tried adding/updating the directives appropriately, if there are any questions let me know. /JJG
+Could you also insert all images in the chapter with the same structure I used for Figure 4-1 through 4-7, and call out all images before they appear? Hopefully, leaving out the boxes will simplify things, and the callouts will help readers follow the discussion. /JG
+I tried to make the requested changes to the images but I'm not enough of an expert in OpenOffice to be able to convince it to format things the way you want them. /JJG
+4
+Now that you've designed something awesome, let’s print it!  But wait; none of the modeling programs we just learned about actually have a “Print” button. What’s up with that?
+Well, it turns out we have a little more work to do before we can feed the model to the printer. In this chapter, I will walk you through the necessary steps to prepare your model for the actual printing process.
+Cleaning Up the Model
+“Will it print?”
+That’s a legitimate question.   It’s certainly possible to design your model in ways that will throw the printer for a loop.  Software can help with some of these problems, but it probably won’t catch every error you make. There are, however, a few things you can do when preparing to print that can save you some headaches (and valuable printer time) later.
+Avoid Overhang
+The first thing we need to consider is how the printer goes about putting material down to create the model.  Current RepRap designs still favor a deposition model, in which a print head deposits material on a build surface layer-by-layer until the model is complete. Each new layer has to be laid down on top of the previous layer, sowhich means that a RepRap printer can’t properly print a models with overhangs projecting out of their sides of the model above the first layer.
+Figure 4-1: The print head creates a model by depositingplacing layer afterupon layer of plastic, where each new layer must beis supported somewhat by the one below.
+You can, however, bend that rule to a certain extent.  Most RepRaps can perform some level of bridging, which is the process ofability to printing “in thin air” by rapidly cooling the liquid filament as it emerges from the nozzle. Just how far you can push this varies from printer to printer, and the best way to determine that limit is by experimentingionat. In general, a good rule is to keep the angle of these overhangs under 45 degrees (Figure 4-21).
+insert < ithreprap3dprintingw04_deposition01.jpg
+@Jason: I really like what you’ve done with the 3D models here; the smiley faces are even more effective as good/bad indicators, and they make your points much more clearly. /JG
+Prod: Possible to make the next three images all part of Figure 4-2, and perhaps label them with u, v, and w?
+I’ve taken the three renders you made and tried incorporating them all into one figure, with the more descriptive captions as part of the body text. Does this seem okay? /JG
+The body text below looks good to me (I don't see the consolodated image here but I can imagine what it might look like). /JJG
+Begin Figure 4-2
+The arms on this model only extend a few millimeters from the body at a 90 degree angle, most printers can handle this.
+This model however has long arms extended far away from any previous layers so there's nothing to support the plastic being laid down.
+This guys arms are sticking out, but they are at a 45 degree angle which means some of the lower level is there to help hold up the arm layers as they go upward.
+End Figure 4-2
+Figure 4-2: You can get away with overhangs, but don’t make them bigger than 45 degrees.
+The arms on the first model in Figure 4-2 u only extend a few millimeters from the body at a 90 degree angle; most printers can handle this. The second model v, however, has long arms extended far away from any previous layers, so there's nothing to support the plastic being laid down. The third model w has arms that stick out, but they are at a 45 degree angle which most printers can safely handle., and some of the lower level should help hold up the arm layers as they go upward.
+@Jason: I found myself a bit lost in the highlight above. Could you clarify what you mean by “go upward”? /JG
+Could probably be phrased as “so there will be enough overlap for the lower layers to support the upper layers as they're printed.” / EG
+Reworded. /JJG
+Often the problem of overhangs can be addressed simply by rotating the object such that the larger parts are at the bottom of the print, resting safely on the print bed (Figure 4-32).
+Prod: Possible to make the next two images part of Figure 4-3, with annotations? 
+Begin Figure 4-3
+
+insert < 04_good_bed.jpg  dprintingwithreprap304_bed_bad02.jpg>
+End figure 4-3
+Figure 4-32: Design your print so that the largest part will rest on the print bed.
+In the first position u, the model’s arms will be unsupported when printed, which is likely to leave drooping plastic under the arms. By laying the model flat on its back v, all parts are supported which makes it much easier to print.
+Though you can’t rely on this to happen every time, sSometimes theseoverhang problems will just “solve” themselves, though you can’t rely on that to happen every time.  On more than one occasion, I've overlooked an obvious overhang problem with a design,  sent it to the printer, and returned to find that the model printed acceptably.  
+ the wall had windows and a door cut into it, so no amount of “bridging” capability would have saved me here (Figure 4-3).
+insert <3dprintingwithreprap04_03.jpg>
+Figure 4-3: Sometimes, you get lucky, and your overhangs don’t affect the usefulness of the printed product.
+However, through no small amount of luck, the printer was able to build-up a number of layers behind this wall, which turned out terrible, but eventually it had deposited enough material that the final outside of the wall turned out pretty good.  Since the inside of the house wouldn't be visible in the application it was designed for, the mess created to complete the model was inconsequential (Figure 4-4).andbut a 90 degree overhang, dhis createTNot only did tIn one case, I printed a little house model and accidentally placed it on the bed with a closed wall facing up.  
+I do wonder about presenting this example to the reader...they can’t expect it to happen all the time, right? If nothing else, might be good to close out the section by reiterating the “right” way to avoid issues. /JG
+Good point, let's drop this entire example, I think the new images do a better job of explaining /JJG
+@Jason: Just to confirm—do you want to remove the entire house example, or just the story about how overhang corrected itself? Either way, could you make the change? /JG
+The whole thing, now removed. /JJG
+Insert <3dprintingwithreprap04_04.jpg>
+Figure 4-4: You can’t even see the printer’s mess from the outside, so having an overhang worked out...this time.
+Make Watertight Connections
+The more I think about it, I do a poor job of explaining what “watertight” means here.  Partially because it's actually a difficult concept and partially because the tools I'm using avoid creating the problem in the first place.  I'm considering re-working this section, but I'm also considering cutting it, since it's not as common of a problem as it used to be, and there are automated ways to fix most watertight problems now.  What do you think? /JJG
+I'd favor reworking over cutting, because it's still a potential problem. Perhaps we could box it, as an aside, if you think it's less relevant? /JG
+Re-reading this in 2015 I don't think it's a topic for a book like this.  Using current modeling tools it's not as easy as it used to be to create models with watertight problems, and none of the examples will produce them, it's really something that was a problem back when I started the book but doesn't come up much anymore, and would be difficult to explain to a useful degree without going way above the average readers head. /JJG
+ file, how to review it to see what was changed. Could you explain? /JG
+I'm not sure the reader will know what they're looking for in that repairedn’t impact how suitable the part is for your application (most of the time the changes are invisible, but better to find out now than after hours of printing).idodmay have made  's changesNetfabbthat any changes After you receive the repaired file, review it to make sure 
+
+I’d also include the direct url for it, because it might not be immediately obvious how to get to the free model repair service from netfabb.com /EG@Jason: Could you fill in the caption for this figure? /JG
+insert <3dprintingwithreprap04_06.png>
+Figure 4-6: 
+
+Could you walk the reader through submitting to Netfabb here? /JG
+Figure 4-5: All parts of your model must be connected, or they won’t print properly.
+If you've checked all your joints and everything seems to overlap sufficiently, or if you're working with a model that you don't have the design files for, there are some automated tools that you can use to double check.  For example, try  submitting the model to Netfabb’s cloud service (Figure 4-6). It’s free (at the time of writing), and it will attempt to identify and correct any holes in your design./JG or perhaps it could be helpful to show renders here, instead. Seeing four separate cubes vs. one solid figure would really be a good contrast. @Jason: This is one figure I think we could redraw for you, The software you use to process a model for the 3D printer will most likely require a watertight design.  This means that all of the individual shapes that make up the model need to be connected (Figure 4-5).  This can be harder to achieve than it sounds, though your modeling software might be able to help you solve watertight problems, depending on how sophisticated it is.
+insert <3dprintingwithreprap04_05.jpg>
+Prod: Could you replace this figure with a basic vector graphic? Label for the print bed could be helpful, though; query AU
+
+Shells, Infill and Wall Thickness
+Objects printed by a deposition-style printer are usually constructed from a combination of two types of print objects called shells and infill.  Shells are solid walls of plastic laid-down in an outline of the model’s’ shape; infill is the material that goes between those walls.  
+Imagine printing a ring. The printer first lays down one circle of plastic for the outside of the ring, then it lays down another circle of plastic for the inside of the ring, and finally it infills the space between these two shells with plastic (Figure 4-7).
+insert <3dprintingwithreprap04_07.jpg>
+Figure 4-7: Shells and infill in a simple square ring.
+Prod: Could you try redrawing this one as a vector graphic, with the labels?
+In a real world reprap setup, the shell and infill might look something like Figure 4-8.
+We could just use a bit here to connect the drawing and the photo; would my sentence above make sense? Also, as you’re changing the figure captions, could you tweak that callout so it has the correct number? /JG
+Your wording looks great. /JJG
+insert <04_shell_and_infill.jpg>
+The trick is that on any RepRap printer, there are minimum sizes for the width of these types of output.  The minimum width of a shell is limited to the size of the printer's nozzle. Technically, minimum infill size has the same limit, but practically speaking, infill that is thinner than three shell widths, as in Figure 4-9, is impractical)8 (Figure 4-. In these cases, it usually makes more sense to use multiple shells.
+Insert <04_no_infill.jpg>
+Does the figure callout above refer to the image of the silver object that’s all shell? If so, could you move that image to here, immediately after the callout? /JG
+I think the image is immediately after the callout already (below these comments)? /JJG
+
+In most cases, it usually makes more sense to use multiple shells, as I've done in the four pieces in Figure 4-11.
+insert <04_infill.jpg>
+
+I was a bit confused about the first sentence below, and what it referred to; do I have you right with my tweaks? /JG
+I took another run at that sentence to try and make it more clear. /JJG
+But what does the infill isamountthickness have to do with the model itself? Can’t software solve that problem?  Perhaps, but no software  knows as much as you do about how your part will be used.  Choosing the correct infill amount is a trade-off between the strength of the part vs. the amount of plastic used, which affects the cost, weight and printing time of the part.to do things rightyou can  best yourthe try   as you do, soing print do with the part you’reto about what you want .
+insert <3dprintingwithreprap04_08.jpg>
+
+
+
+To this end, lLook carefully at any thin walls or other thin structures in your model, and if they require strength, consider making them thick enough that there isto leave room for some infill material between them.  Conversely, if they don't need the extra strength, consider making them thinner to match the shell thickness, which will preventso that the printer won't wastinge time and material doing small amounts of unnecessary infillunnecessaryit's  where .
+In cases where infill isn't unnecessary (in a vase for example), you can disable it altogether when slicing the model, which you’ll learn about in the next section. You can also use additional shells to provide more strength, which  can dramatically reduce print time.
+Compared to strengthening with infill? /EG
+Correct. /JJG
+Slicing Software and Terminology
+Once you've addressed anyll of the abovepotential issues with the model, it's time to slice it!  Slicing is the process of taking the solid CAD model (usually in STL format) and turning it into Gcode, a programming language used extensively in the manufacturing industry, thatwhich the printer understands.  At this point, the file changes from something that describes what your model will look like into a series of motions that the printer must go though.  This process is called “slicing” because it takes the solid object and cuts it into the individual layers that the printer will lay down one at a time.
+start box
+Common Gcode Commands
+Gcode is an old and simple programming language used for all sorts of machines, .  Itand it derives from the earliest programmable machines (weaving looms) and is used extensively throughout the manufacturing industry.  You don’t need to know how to read or write gcode to use a 3D printer, but knowing a little can come in handy if you need to make a change to the printer on-the-fly without regenerating the entire gcode file (moving the nozzle to a different starting point to avoid a portion of the bed, or changing the hot-end temperature slightly for a different type of plastic, for example). In Table 4-1, you’ll find a few common gcode commands you might want to remember.
+Under what circumstances will remembering these codes come in handy for the reader? They aren't being referenced anywhere else in the chapter, so it's a bit confusing to be asked to learn them at this point without explanation. /EG
+@Jason: Pointing readers to a section or chapter in the book where they'll need Gcode might be enough; could you add that look ahead? I might also just suggest boxing this, since it doesn't seem to be a primary focus of the section. /JG
+I added a little more above to provide some examples.  /JJG
+Table 4-1: Common Gcodes
+Code
+Action
+G1
+Moves the tool head (in our case, the extruder) to the specified coordinate (x,y,z)
+G28
+Home all axis
+M104
+Set hot-end temperature
+M84
+Disable motors
+M106
+Set fan speed
+
+Note that not all codes mean the same thing on all printers (especially the “M” codes).  Exactly what happens when the printer receives a Gcode is up to the printer’s firmware.  The examples abovein Table 4-1 are for the Marlin firmware, which is popular on Reprap printers, but other printers may treat these commands differently.  A complete reference of standard Gcodes can be found here: http://reprap.org/wiki/G-code
+end box
+Before you can start slicing, you'll need to get some software to do the work for you.  
+Slicing SoftwareChoose Your Slicing Software
+At the time of publication,  there are a number of open-source software packages capable of slicing a model in STL format into Gcode. Some of the most widely used slicing packages are listed in Table 4-2; explore them, and pick the one that you like best. 
+Table 4-2: Popular Reprap Slicing Software
+Software
+Website
+Slic3r
+http://slic3r.org/
+Cura
+http://wiki.ultimaker.com/Cura
+KISSlicerSkeinforge
+http://kisslicer.comfabmetheus.crsndoo.com/wiki/index.php/Skeinforge
+Repsnapper
+https://github.com/timschmidt/repsnapper
+
+Skeinforge seems to not have been updated since 2012, is it still used widely enough to justify including it here? /EG
+Agreed, replaced with KISSlicer. /JJG
+ We'llLet's discuss thesome common slicing parameters that are common to most slicing software that,at a minimum,that you'll need to understand in order to slice your model correctly.  We
+Could you explain to the reader why you're demonstrating with Cura? It seems a bit limited, based on the “Infill” section. /JG
+Cura is (at this time) the easiest of the packages to get running.  Given the potential complexity of the other slicing software across platforms Cura is the safest bet for beginners. /JJG
+I'll use Cura to demonstrate these parameters in action, so. download the most recent version of Cura for your operating system (Windows, Mac, and Ubuntu Linux are supported) from http://ultimaker.com/en/products/software<insert URL> now. To install it...
+Should readers have downloaded and installed Cura yet? I'd suggest doing a clean install of Cura here, on all three systems, to look for potential hangups.
+If the reader won't have to adjust any settings, select particular options, add certain files, etc., it should be fine to just advise them to accept all defaults and carry on. Otherwise, could you walk them through the install, on each system? /JG
+Downloading and installing Cura is pretty straightforward on all platforms. /JJG
+Once you've installed Cura, open it up, and you should see something like Figure 4-11, but without the friendly model. 
+Would my placeholder above be accurate to introduce the next image? If not, could you try another transition? /JG
+Works for me. /JJG
+insert <04_slicing.png>
+Now, let's explore those slicing parameters, in the order listed in Cura's Basic tab, at left. 
+Layer Height
+Layer height u is how thin the layers of your model will be sliced.; (Pprinter manufacturers sometimes refer to this as resolution, although this is only the vertical resolution.)  Layer height is usually expressed in fractions of a millimeter or  microns (0.001mm).
+The lower the layer height, the smoother the print will be, up to a  limit.  There isBeyond a certain point, where reducing the layer height will stop improving the print quality, and typically, this results in loss of detail or other irregularities.  Exactly whatere this limit is varies from printer to printer, although most well-calibrated RepRaps are capable of producing good prints at adown to a layer height of as low as 0.01mm.
+So why would anyone You may choose to print above the minimum layer height to save ?  The primary reason is time.  The lower the layer height, the higher the number of layers and the longer the model will take to print.  If a model takes an hour and a half to print atwith .25mm high layers height, it willmay take twoup to two and a half hours atwith 0.1mm layers.  Take it down to 0.01mm (100 microns) and you're looking at 15 hours!  
+Time is important because it's rare that theyour first time you print something attempt will beis rarely theyour last, and especially in the case ofwith new designs (as opposed to tested models downloaded from Thingiverse, etc.), where multiple iterations of design-slice-print are often necessary to get things just right.  In these cases, shorteningr print times can make a big difference.
+The other issue with long prints is that  times is that they increase the chanceodds of equipment failure increases with print time, so the chances of loosing the print go up as printing time goes upyou actually run the risk of losing your work with slower prints. I don't have to tell you how fun it is to have a 15 hour print go wrong at hour 14...
+Personally, I use a 0.1mm layer height on my RepRap Mendel by default. I’ll go up to 0.25mm if I'm in a hurry, and down to 0.01mm when if I know the model I'm printing is I need a smooth finish, but only once the model is exactly what I want, that it and I've checked that it will prints correctly on my printer, and when a smooth finish matters at lower resolutions. 
+Shells 
+I wasn't 100% sure of the subject of “This” in the first sentence below; do I have you right with my tweaks? /JG
+Looks good. /JJG
+This is where sSlicing software varies a bit when it comes to specifying shell parameters.  Some softwareapplications allows you to specify the number of shells, but not the size.  Other software allows you to  specify the shell thickness and then and calculates the number of shells for you based on theyour printer's nozzle size.  If you have to specify the number of shells,  it's good to start with two or three shells is a good place to start.  The interaction between shells, infill and model design is discussed in detail above, but in general, tTwo shells is adequate for models that will userequire some amount of infill, andwhile three shells should be used for models that will rely  just on their shell alones for structure.
+I found myself lost in this section. It seems like we're walking through slicing a model here, but that's not explicitly stated.
+What if we provide the smiley guy as a file to practice on (or perhaps include a project at the end of Ch. 3, that has the reader model him?), tell the reader to open it in Cura, and give specific directions for fiddling with parameters?
+Slight tweaks to the existing material (“We'll choose...” versus “Choose...”) would do the trick. I'd tell them to adjust shell thickness, for example, to see the error in action.
+If you like the idea, could you make these changes as you revise? /JG
+I'm not sure how to tackle this.  I do like the idea of re-writing it as more of an exercise, but I'm not sure how to make it more clear. /JJG
+Since we're usingIn Cura, all weyou only need to do is specify the shell thickness in millimeters and itthe software handles the rest.  Our model is just for fun only, so theour only considerationrequirement is that we don't make the shell thickness isn't smaller than theour nozzle size (the nozzle size determines the smallest amount of plastic that can be extruded).  Luckily, Cura is good about lettings us know if we get too close to the nozzle's limits andby changesturning the color fo the Shell thickness field to yellow or red if we make it too small. It will give you a warning, as shown in Figure 4-12.
+insert <cura_shell_warning.png>
+
+Infill
+Infill is discussed in terms of density (in percentages) and pattern.  The stronger the model needs to be, the more infill you should use.  Printed modelsModels printed inwith ABS or PLA plastic are surprisingly strong, and fill percentages above 20% are rarely necessary.  The downside to higher fill rates is that it takes more filament to print the model, and it can also increase print times significantly.
+Is there going to be a comparison of different plastic/filament types anywhere that readers will be able to reference easily? Just anticipating something that readers will probably be thinking about at this point. /EG
+Agreed. However this is an area experiencing a lot of change right now so it's something I'd like to discuss in detail in the final chapter (since I plan to complete that as close to the publishing date as possible so it's somewhat current when the book comes out).  For now I re-worded the above to avoid going down that road  at this point. /JJG
+Choosing a good infill pattern is another interesting topic.  When I started building my first RepRap, the most common fill pattern was rectilinear (that is, criss-cross); however, the honeycomb pattern is another a popular default.  The pros and cons of various patterns is certainly a rich area of discussion and debate, and one pattern may be superior to another depending on the application.
+A discussion of when to use each fill pattern may be out of the scope of the book, but an image visually comparing the different fill types might be useful enough to answer most readers' questions about them. /EG
+I agree with Enrique here; could you either describe (perhaps in a table, or even a box?) or offer a figure for comparison? I think that's a major concept someone new to 3D printing would hope to learn in this book.  /JG
+The Slic3r documentation (http://manual.slic3r.org/expert-mode/infill) has a great detailed breakdown on this subject, I'm not sure if it makes more sense to get permission to include that information in the book or simply direct readers to the website for more information since it is somewhat software-specific? /JJG
+The one factcertainty about infill is that the more complex it is, the longer it'll takes to print.  A Hhoneycomb infill takes about twice as long as a rectilinear one, and other designs arecan be even slower.  Here again, yYou'll need to consider the value of thea pattern in relation to the its print time and make a choicedecide on a case-by-case basiswhat best suits your needs for each case.  Personally, I now use honeycomb by default (see Figure 4-13) and I use rectilinear for solid layers (like tops and bottoms).
+Insert <3dprintingwithreprap04_09.jpg>
+
+Figure 4-139: A square shell with hexagonal infill
+HereIn Figure 4-13, you can clearly see the vertical shells around the outside of the model (around the outside), the honeycomb fill, and the beginnings of a horizontal shell (seen here covering half of the top surface).
+How would the reader choose 20%? I'd suggest directing them to “click Button X to choose 20% now” or similar. /JG
+Updated explanation below. /JJG
+The slicing software you choose will also impactdictate what fill patterns you can chooseuse.  In the current version of Cura, the only option is rectilinear, so the only decision to make is the fill percentage, and this will come down to how strong you need the part to be.  In the case of our example, our little guy just needs to be strong enough to support his own weight, so we'll choose 20% by typing “20” in the “Fill Density (%) field.
+An image showing a completed rectilinear fill at 20% may be good to include here (since it seems to be implied that it isn't terribly strong). Or perhaps an image comparing different fill densities (if their differences are even visually noticeable)? Because at this point, the reader might not have a very good idea of how these fills and densities might affect the look of their model, just that they affect the strength of it. /EG 
+The fill density shouldn't have any effect on the look of the model as it's hidden inside the model when complete (so long as the printer is working correctly :), only the strength, amount of material used, weight and printing time.  /JJG
+Speed
+You can also use your slicing software to set the speed at which theyour printer moves theits print head around the build surface within your slicing software.  Of course wWe'd like the printer to run as fast as it (safely) can of course, andbut that speed will vary greatly from machine to machine.  If you are using a ready-made printer, the manufacturer will likely have a recommended speed and that you should use this as a starting point.  If you're using a custom built printer you built yourself, then you'll have to experiment to find the highest safe speed for your printerit, but 30mm/s is a good place to start.
+Some softwareslicing applications will may allow you to specify the printing speed in more details ways, for example using onedifferent speeds for the shells and a different one forand infills, or using a lower speed for the first layer (when making the plastic stick to the bed is critical).  Here eExperimentation is the best way to discover the right valuessettings, but starting with the same speed for everything is a good place to start.
+In addition to limitsRegardless of the machine's limitations, some designs will simply come out better if printed below maximum speed.  The time a layer has to cool before the next layer is placed on top of it can cause distortions such as curling (demonstrated in Figure 4-14) to occur.  
+Insert <04_curling.jpg>
+Most slicing software will automatically vary the print speed to try and compensate for these errors, or it will provide multiple speed settings for various operations (usually expressed as a percentages of the base speed), to try and prevent these errors. I
+If you are getting poor output from theyour printer (orlike complete failures, likeor the prints coming loose from the bed, and so on ) and there isn'twithout another directy obvious explanation for the problem, slowing down can make a big difference.
+Since oOur model is fairly simple, but we don't want to take any chances, so we'll choose a printing speed of 30mm/s to be on the safe side.
+Skirt & Brim
+Skirt is a bit of material laid down before the printer starts working on the actual model. This  ensures that the plastic is flowing well and that any “gunk” left over from previous prints is expelled before printing the new model itself.  Skirt, which I show in Figure 4-15, is usually specified in terms of distance from the model, and the number of loops. you want the print head to make before starting work on the model. 
+Insert <04_skirt.jpg>
+There are really only two things to consider when adjusting settings for the skirt. are You need to take into account: how much extra room the print bed has outside of the model, and then  make sure that the skirt won’t go outside the printer’s boundaries. Typically one loop is enough, but for very small models, it might be worth doing two just to make sure everything is flowing well before laying down material for the actual print.
+Brim is a technique used to combat curling of the first layer of the print.  The brim is a throw-away layer of plastic that is printed around the outside of the actual model (similar to a skirt, but attached). See Figure 4-16 for an example. 
+Insert <04_brim.jpg>
+ This can sometimes helps the print “hold on” tostay flat against the bed andto prevent the base of the model from curling or even coming completely loose from the bed.  It's also useful when printing models that don't have a lot of contact with the bed, like a model of the Eiffel Tower that has just four small feet.
+Support Material
+Support material is extra plastic that is added by the slicer to support parts of the model that would otherwise be unprintable, like due to excessive overhangs or parts that are simply floating in mid air.  On a single-material printer, you’ll have to cut away support material after the print is done, so it's best to avoid using it if possible.
+On multi-material printers, it's possible to have one of the extruders loaded with special support material that is easy to remove (typically water soluble). On these machines, it should be fine to let the slicer generate support material because you can easily remove it from the finished print.
+Additional Settings
+All slicing programs have numerousmany more settings beyondthan just the ones described here.  Many of these are parameters are for the specific to the printer you’re using and would only need to be changed when generating Gcode for a different printer.  Others may be specialized settings for a specific materials (such as temperature settings, filament diameter, and so on). or settingsjust options that are unique to that software you're using. 
+If there are settings in your slicing software that I didn’t describe in detail, , you should review the software's documentation and then experiment with them to see what works best for theyour model, material, and printer that you're working with.
+Let's slice it already!
+Once your settings are in order, it's time to generate some gGcode!  First, Lload your model up in the slicing program, and start the process. SIn some slicers you can simply click File4Open to load your model by itself, have a platter where you canwhile others support addloading multiple models simultaneously to process together, while in others, you’ll simply click File4Open. See Figure 4-170 for an example in Cura.
+Insert < 04_slicing.png3dprintingwithreprap04_10.jpg>
+Here Cura makes things easy and automatically slices the file whenever you make a change to the settings, so all weyou have to do is click File->SaveFile4Save Gcode Gcode and we're all set.
+Slicing canmay take a while;, as the software is workings very hard to find the best combination of printer moves to translate the shape of your model into lines of plastic on the print bed.  Writing slicing software is a black art, bordering on alchemy, so be patient and grab a beverage while your software does the work for you.
+Once it's done, you should, have a Gcode file that is ready for consumption by the printer of your choice.  Feeding this file to the printer is the job of another piece of software called the Host, which is the first thing we'll talk about in the following chapter.
+Is the Gcode generated not overly specific to the printer you specified in the slicer software? Not sure if it's clear under what circumstances Gcode would be compatible with other printers. /EG
+Gcode files are generally compatible, but there may be printer-specific parameters like the size of the bed or maximum speeds that could make a gcode file incompatible (or at least unsafe) for one printer vs. another.  Generally speaking you'll generate a Gcode file for a specific printer by specifying the printer's details to the slicing software, but I'm not sure how to get that across here? /JJG
+ToYou can also test out the gcode before feeding it to theyour printer there arewith a number of applications that can “preview” the code, but one of the easiest is a website called http://gcode.ws/.
+Insert <04_gcode_view.png>
+Could you slow down a bit here and explain to the reader, step-by-step, how they'd use gcode.ws to analyze the Gcode? /JG
+I broke the process down a bit and added some details about how you can use the feedback from the website. /JJG
+
+To preview your model's Gcode open http://gcode.ws in a browser and click the “Choose File” button to select your gcode file.  Gcode.ws will then display a 3D render based on the contents of the gcode file that you can check for any problems that were introduced during the slicing step.
+
+If what you see on Gcode.ws doesn't look like the model you just sliced, double-check the slicer settings.  What you see on Gcode.ws is drawn from the same instructions that will be sent to your printer, so if they are drawing the wrong thing you'll want to correct that before sending these instructions to your printer.
+
+Gcode.ws's analyzer can show you display your model layer-by-layer, and also as a complete 3D visualization, which is a quick way to find any errors that may have crept in during the slicing process.
+I found myself wondering how I'd troubleshoot errors here. Any advice you'd offer? Could you also describe how the reader will actually know there are errors? Does gcode.ws tell them? /JG
+I added some additional steps to indicate how the results of using gcode.ws can be used to “pre-flight” check the gcode. /JJG
+If everything still looks good, you're ready to move on to the next step,: printing!
+
+

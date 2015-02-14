@@ -1,0 +1,198 @@
+﻿7
+Sharing
+More than any other thing, sharing has been the single most important thing in the development of Desktop Manufacturing.  Sharing is what allowed the Reprap project to bring 3d printing to everyone, and sharing is what has allowed Reprap printers to drop in price and improve in quality year after year.  We wouldn't have access to 3d printing technology if it wasn't for sharing, which is why I've dedicated an entire chapter to the subject.
+
+The good news is that there's so many ways to share your 3d printing work that chances are you'll find a couple that are easy and fun, in fact you're probably doing them already.
+
+Share your work online
+You probably already use some form of social networking (Twitter, Facebook, Google+, etc.).  If so, sharing your work is as easy as posting an update describing what you're working on or a photo of your last model, print, etc.  There's also places online that specialize in 3d printing where you can share your models, discuss printers and get help improving your knowledge and experience.
+
+But let's start with something you probably already know, social networking.
+
+Social Networks
+Social networks are a great place to share your work and discuss what you're working on.  Posting an update is as easy as writing a few lines about your project and sharing pictures of your models, prints, etc. is usually a one-click operation.  Most social networks also have mobile apps that make documenting and sharing your work using a phone very easy.
+
+The great thing about sharing your 3d printing projects on social networks is that it establishes a timeframe for the work automatically.  This might not seem important now, but as you continue to experiment and learn more, being able to reflect on previous work or reference photos from old prints becomes more and more useful.  In addition to the “hard” value of being able to compare a current print to one from a year ago, there is also a psychological value to being able to see your work improve.
+
+3D printing is new, and it can be hard, and seeing how far you've come can help neutralize feelings of frustration and failure that is the part of any work in emerging technology.  Sharing your success and failures on social networks provides you with a zero-effort timeline of your progress from beginning to journeyman and is so easy it's hard to justify not doing it.
+
+Model Repositories
+Model repositories are places where you can share your models and find models created by other designers.  Currently the most well-known of these is Thingiverse.com, created by the Makerbot corporation.  However, in 2013 Makerbot decided to make their products closed-source, and in turn changed the way that projects hosted on Thingiverse were licensed as well as turning Thingiverse into a heavily brand-centric website.  This rubbed a lot of the Reprap community the wrong way, leading to the creation of several alternative websites as well as the development of new ways of sharing and finding 3d models for printing.
+
+Of the Thingiverse website alternatives, the most popular at the moment is Ultimaker's Youmagine.com.  Fortunately it's also one of the easiest to use, so let's walk through setting up an account and posting a new model.
+
+
+Click “Register” in the top-right-hand corner of the homepage.  The registration form requests the information you'd expect.  Once the registration process is complete you should see the “Log in” link at the top-right corner of the screen replaced with your username, if not, try logging in with the information you provided and check your spam or junk email folder to make sure any confirmation emails from Youimagine.com didn't get filed incorrectly.
+
+Before you can upload a design you'll need to gather a few things:
+
+The model file (.stl) you want to share
+Any photos or images you want to accompany the model
+
+One you have these files gathered click the blue “+ Add design” button at the top of the page to get started.
+
+You don't have to provide all the information requested by the New Design form, but the more you provide the more useful your model will be to others, so it's worth putting in a little extra effort.  For this example we'll share the snowman we created in Chapter 3, here's how I filled out the form:
+
+Name
+OpenSCAD Snowman
+
+Excerpt
+A simple snowman model created in OpenSCAD
+
+Category
+Miniatures
+
+License
+Creative Commons – Attribution Share Alike
+
+Tags
+snowman, winter, openscad, frosty
+
+Bill of Materials
+filament
+
+Description
+A simple snowman model created in OpenSCAD. as an example for my 3D printing book.
+
+Once you're happy with the supplied information, click “Save and continue” to upload the model and image files.
+
+
+It seems strange to me that the form requests the image files first (as opposed to the model files), but we'll just play along.  Click the “Browse your computer...” button and select the image file you located earlier.  Once you select the file it will be uploaded and you can do the same for the .STL file.  After both files are uploaded, click “Finish and view design” to see your design listing:
+
+
+Here's what your design will look like on the Youmagine website.  At this point the design is “unpublished”, so only you can see it.  This is a good time to review the information you provided to make sure it's correct before you let the rest of the world see your typos and misspellings (click the big blue “Edit” button to make changes as necessary).
+
+You'll also notice that in addition to the image file you selected there is another image on the listing.  This is a rendering of your model processed by the Youmagine software.  I don't really care for the OpenSCAD screenshot I uploaded, so it would be nice if I could just use this rendering instead, but that doesn't seem to be possible in the current version of the Youmagine site.
+
+Once you're satisfied with the listing click the small green “Publish” button to make your design live on the site.  The page should reload with a message at the top that says “Successfully updated state of Design”, and your design is ready to share with the world!  Youmagine provides handy links for sharing your listing on popular social networks, and you can of course always copy the URL and share that via any method you like.
+
+Once your design is listed publicly there's a number of ways other Youmagine members can interact with it.  You can try these out by visiting other people's designs on the site.  You can “star” designs you like to make them more visible to other members, or leave comments to ask questions or provide feedback.  Everything you do on Youmagine is displayed on your Profile under the “Activity” tab, so it's easy to find your way back to designs you've posted, starred or commented on.
+
+In addition to being a model repository, Youmagine has a unique “Ideas” section where you can post ideas for designs as well as post design response to other members ideas.  It's a pretty cool idea and something that could become very powerful as printers become more available and more people pick up the design skills necessary to realize other's ideas.
+
+In addition to Youmagine there are a number of up-and-coming model repositories.  By the time you read this the list will undoubtedly change, but here's a few more to check out when looking for models to work with or places to share your work:
+
+https://cubehero.com
+http://www.bld3r.com
+https://thepiratebay.se/browse/605
+
+Non-Model Repositories
+Of course 3D models are just computer files, and as such can be stored in any sort of repository, not just ones specifically designed for storing 3D models.  The downside to this is that these stores generally don't make any special provisions for processing or displaying STL files, Code files, etc. but if you already have a system for keeping track of and sharing your electronic work, it might make sense to use these same mechanisms to share you 3d designs.
+
+One non-3d-specific repository that has become a popular way to track and share 3d model files is Github.  Github is a sort of semi-social network built around the Git code versioning system used elsewhere in this book (see Appendix X for a brief introduction).  While Github doesn't provide a lot of functionality that makes it better for sharing 3d models than sites like Youmagine (although there are some), if you're already a regular Github user it might be easier and faster for you to manage and share your models this way.
+
+Sharing a model on Github is pretty straightforward, but you'll need to make sure you've got Git setup on your system first (see Appendix X for basic instructions on setting up Git).  Let's share the same snowman we posted to Youmagine on Github as an example.
+
+
+First you'll need a Github account.  Visit http://github.com and fill-out the registration form on the homepage.  Once you've confirmed your account the “Sign in” button on the top-right of the page should change to display your username, and you'll be deposited at a “dashboard” page that looks something like this:
+
+<screenshot of basic user github dashboard>
+
+Github is aimed at software developers and therefore the user interface can be a bit terse.  At the top-right corner of the page is a “+” sign, click that to create a new “repository” where we'll post our snowman model.
+
+
+Here's the information you'll need to provide to create the repository:
+
+Repository name
+This is the name that will be associated with the model.  Note that the name must be unique in all of Github, so you might have to resort to something other than what you've been calling  your model up until now (we got lucky apparently).  Also note that this name will become part of the URL for the repository, so something easy to type is always a good idea.
+
+Description
+Optional, a short summary of the model.
+
+Public/Private
+
+
+Repositories on Github are public by default, and Github allows users an unlimited number of public repositories.  You can also make your repository private, but since this chapter is on sharing, we're not going to do that.
+
+Initialize this repository with a README
+Since Github is geared toward storing software source code, it expects the code to do the talking.  To this end instead of requiring a long list of fields describing what's stored in the repository, a README file is used to display this information.  By checking this box, Github will create a minimal README file to use as a starting point.
+
+The rest of the fields can be left as-is.  Just like Youmagine, you can select a license to be included in your repository to indicate how you want others to be able to use your model.  For this example we'll just leave that be, but feel free to select a license if you desire.
+
+Once you're happy with the supplied values click “Create repository” to get things started.  Bear in mind that this is a bit different from creating a page or a post on other systems and reversing some of these settings can be more complicated than just clicking “edit” on the repository listing, so be sure you're happy with the information you've provided before continuing.  And like that the repository is complete!
+
+
+It doesn't look like much yet does it?  Since Github revolves around Git, most of the work of publishing the model happens in the console.  Before we leave the web page, see down there in the lower-right corner where it says “SSH clone URL”?  Click the “HTTPS” link below the text box there and then copy the text in the box, we're going to need that.
+
+Now it's time to fire up a console!  Once you have a console open, change directories to where you want to keep your local copy of the repository.  This local copy will be synchronized by Git with the repository on Github, so put it somewhere handy.  Once you're in the right place, type the following command into the console:
+
+git clone <clone_url>
+
+Replace <clone_url> with the text you copied from the Github page.  For example, here's what the command for my snowman repository looks like:
+
+git clone https://github.com/jjg/snowman.git
+
+Press “enter” and you should see something like this:
+
+
+If all went well you'll now have a copy of the repository in a new directory with the same name as the repository name (remember when I said choose something easy to type?).  Change directories into the repository directory and list the files.  The only thing you should see is the README.md file Github created for us.
+
+The next step is to copy the files you want to post to the repository into this new directory.  In the case of the snowman project, I'm going to put the STL file in there.  You can copy these in using the console, or you can use the Finder, File Manager, etc. it makes no difference as long as the file winds up in the local repository directory, next to the README.md file.  After copying in the snowman's STL file, here's what my directory listing looks like:
+
+
+Now before we can “push” these files to the repository on Github, we need to tell Git we want them included in the repository (copying them into the directory isn't enough).  There's a few ways to do this, but the fastest one is to issue the following command in the repository directory:
+
+git add .
+
+This will add all the files in the repository directory to the repository, and Git will start tracking changes made to them.  Speaking of changes, this is a good time to update that README.md file with a better description of our model.
+
+Open the README.md file in any text editor, update the description and save the file.  As the .md extension implies, the README file can contain formatting code known as “markdown”, that will be rendered nicely on the Github repository page.  We're not going to get into markdown at the moment, but if you want to make your README file fancy, that's the way to do it.  In my case I'm just going to add the same description to the README file that I used on the Youmagine page, and save the changes.
+
+With the changes made we're ready to push, but first we have to commit the changes to the repository.  This might sound like a lot of work, but remember that Git was designed for programmers, and programmers love to type!
+
+Back at the console, type the following command in the repository directory:
+
+git status
+
+You should see something like this:
+
+What Git's telling us is that README.md was modified, and snowman_detailed.stl was added to the repository.  This looks right, so we'll commit the changes with the command below:
+
+git commit -a -m “added snowman stl file and updated readme”
+
+This command tells Git to commit all changes (-a) and to add the commit message (-m) we provided in quotes.  Commit messages are stored each time you commit changes to the repository and are very useful as a way to know what changed over time.  If you leave off the -m, you'll still have to provide a commit message but Git will invoke the system text editor to do so.  With the changes committed, there's just one more thing to do:
+
+git push
+
+You will likely be prompted to enter your Github username and password, and then Git will push the committed changes up to Github.  If all goes well you should be able to refresh the Github repository page in your web browser and see the changes.
+
+
+Now remember when I said Github doesn't do much to go out-of-the way to support 3d models?  Well there is one convenience they offer at the time of writing.  If you click on the STL file listed in the repository Github page, you'll get a little treat:
+
+
+Github knows that STL files are 3d models, and renders them accordingly in the browser.  It's a little thing, but it's very handy, and saves you the trouble of having to add image files to the repository so others can get a preview of the model before downloading it.
+
+Of course, there is a lot more that Github can do and we've only just scratched the surface.  But from this example you can see how Github provides an alternative way of managing and sharing your 3d models that might suit some people better than the way specialty 3d repositories work.
+
+
+
+
+
+Share your work in real life
+With all these cool ways to share your work electronically it's easy to forgot about good-old-fashioned show-and-tell, but don't overlook it.  
+
+Sharing your work electronically is convenient for both you and the people you know online, but what about the  people offline?  Most people who frequent online establishments like Twitter and Facebook have heard of 3d printing and probably even know someone working with it, but there's a lot of people who are not as connected as you may be, but might have a lot to add to the conversation about 3d printing and desktop manufacturing.
+
+Much of the technology used in 3d printing isn't new, in fact the Gcode that's used to control Reprap printers goes back to the 1960's and has been used by manufacturing equipment (and the people who program them) for decades.  Additionally, the aspects of Cartesian manufacturing equipment goes back further, and there are large established communities of experts in these fields who are not necissarilly an active part of your online communities.
+
+By sharing your 3d printing work in person, and in public in the real world, you might be surprised to see who takes an interest and who can contribute to your work both as a student and a teacher.  I've been blown away when presenting Reprap topics to various groups and hear new and innovating ideas and applications for 3d printing from the most surprising sources. 
+
+It's also often easier to explain 3d printing when you can let someone watch the printer at work and handle a printed part.  In many cases even the most skeptical of the technology have been swayed when watching the machine work and seeing that it actually does work.
+
+
+Contribute to the community
+Adrian Boyer may have started the Reprap project, but it is the community surrounding that event that has made desktop publishing possible.  The continual refinement and improvement (as well as reduced costs) is a direct effect of an active community taking part in the research & development of 3d printing technology, and then turning the outcome of that work over to other community members unencumbered by legal and financial constraints.
+
+If you're new to 3d printing you might wonder what you could add to this community.  To be frank, everything.  
+
+First off, by choosing to build, buy or otherwise acquire a Reprap printer, you're supporting the companies, communities and individuals who have contributed to the project since its inception.  By sharing your projects and progress as we've discussed above, you're raising awareness of the project and inspiring others to take the plunge into 3d printing.  You're also helping spread the word that there is an alternative to accepting what the private, closed-source printer companies have to offer (remember that 3d printing has been around for decades, and it was only after the open-source Reprap project that these tools became available to anyone outside of higher education and corporate R&D departments).
+
+So just by using a Reprap, and sharing your experience, you're contributing to the community.  If you want to do more, there are many options, so many that it can be hard to find a place to start.
+
+If you're looking for guidance, start with the forums provided by the source of your printer.  This could be support forums of a printer manufacturer, online groups of people from the hackerspace where you got your bag of parts or any other online or offline community that got you started with your printer.  All of these places will be familiar with your equipment and will have a lot of experience to share about tuning, troubleshooting and new developments and applications for your equipment.  In addition to asking questions, take time to share your personal experiences in 3d printing and as you gain knowledge and experience, jump in to help other operators solve their printing problems as well.  Sometimes it takes the “beginners mind” to see a simple solution that someone with more experience will overlook.
+
+One very important thing to remember when dealing with the community is “be nice”.  You may become very frustrated with a printing project and be tempted to lash-out at the company or person who designed or made your printer or just some piece of it.  Don't; remember that there's a good chance that this person received no compensation for that part and it should be looked at as a gift.  Even in the case that you purchased the part at great expense, and you may feel cheated or ripped-off, resist the urge to lash-out and vent your frustration.  Instead, share the experience as if everyone else involved has the best intentions (they most likely do), and you're very likely to receive help from others who were involved directly, or have experienced the same problems and have found a solution.  Remember that personal 3d printing is a very young technology and by their nature these machines are not stamped out on the assembly line like most consumer products.  This means that from time to time you may experience the frustration of a failure that is due to a manufacturing defect or other error, but remember that discovering these defects and sharing the knowledge of them (or better yet, proposing a solution) is the reason that personal 3d printing exists today, and why it has been able to evolve as quickly as it has.
+
+At some point you may want to get involved in the larger Reprap community, perhaps you have questions that go beyond making your printer work, or even ideas on how to improve the design of future printers?  There are many online groups, forums and communities that discuss these topics.  The Reprap project has it's own forums at http://forums.reprap.org/, and if you have a favorite social network, chances are there is already an active page, group, etc. for you to join.
+
+As someone once said “if you love your freedom, use it!”.  By sharing your experiences and the experiences of others, the Reprap community will remain alive and ahead of the technology curve.  You can be a part of this simply by enjoying your tools and sharing that joy with the world.
