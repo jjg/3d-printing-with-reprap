@@ -1,0 +1,150 @@
+﻿3
+3D Modeling Tools
+In the world of 3D printing, the term modeling describes the process of designing a model to be 3D printed. You’ll often model three-dimensional objects using digital tools alone but you can also create models using physical media such as paper or clay or a scan of a physical model. Whatever method you choose, you’ll ultimately use your model to produce a file that you’ll feed up the 3D printing chain.
+In this book, we’ll focus on digital rather than physical modeling and in this chapter, I’ll walk you through using Tinkercad, a free-to-use, web-based modeling tool to get you started modeling quickly.  I'll also introduce you to several other tools that demonstrate the diversity of modeling tools available.
+Tinkercad
+Tinkercad (http://tinkercad.com) from Autodesk is an approachable CAD (computer aided design) tool that runs inside a web browser, which means you should be able to run it on almost every modern computer as long as you’re connected to the Internet.
+Tinkercad is subscription-based, though its free subscription level may be all that you need for personal projects. Tinkercad has a lot of neat features geared toward the casual CAD user. It makes importing and exporting files in different formats easy (including files from Minecraft), and it provides an excellent and comprehensive tutorial system.
+In order to use Tinkercad you’ll first need to create an account at http://tinkercad.com. As a new user, Tinkercad will immediately begin the tutorial.  
+INSERT tinkercad_first_lesson.png
+Figure 3-1: After signing in the first time, Tinkercad immediately begins the tutorial
+For now we're going to skip the tutorial and create our own model, so select Exit lesson from the menu, and then click Create project under Projects on the Dashboard page.
+INSERT tinkercad_dashboard.png 
+Prod: HIGHLIGHT “Create project”?
+
+Figure 3-2: The Tinkercad Dashboard
+This will add Project 1 to the Dashboard.  Click Create new design to create a new model and open the Workplane page.
+INSERT tinkercad_dashboard_project_1.png
+Figure 3-3: A new project is added to the Dashboard
+Creating a New Design
+You’ll create your designs in Tinkercad’s workplane as shown in Figure 3-4.
+INSERT tinkercad_workplane_empty.png
+Figure 3-4: The Tinkercad Workplane
+Let's start by adding a box to the workplane.  On the right-hand side of the page there is a list of objects that can be added to the Workplane; click on Geometric.  This will display a number of basic solids that can be used to build almost any imaginable 3D object.
+INSERT tinkercad_objects_geometric.png
+Prod: highlight MENU?
+Figure 3-5: The Geometric solids menu
+To add a box to the workplane, first right-click the red box under Geometric, then move your mouse pointer to the left, over the Workplane area.  You'll notice that the box follows you there.  Now click on the Workplane to “drop” the box, and it will become solid and remain where you dropped it.
+INSERT tinkercad_workplane_box.png
+Figure 3-6: Adding a Box to the Workplane
+You may also notice that after you dropped the box the Inspector was displayed.  This allows you to edit the properties of an object, and is visible anytime an object is selected.  There are two properties: Color and Hole.  For now we're going to leave the Hole property as-is, but feel free to change the color of the box if you like by clicking the Color box in the inspector and selecting a new color from the pallet.  
+INSERT tinkercad_workplane_box_inspector_color_pallet.png
+Figure 3-7: The Inspector can change the color and hole property of a solid
+When you're done, click anywhere on the Workplane (other than on the box) to dismiss the Inspector.
+Moving things around 
+The box can be moved around the Workplane by clicking and dragging it with the left mouse button.  As it moves, you'll notice that the distance from the original position is displayed.  This comes in handy when you need to make minor but accurate adjustments to the position of an object.  You can also use the arrow keys on your keyboard to make incremental movements (sometimes easier than using the mouse for precise moves).
+In addition to moving left, right, forward and back, you can also move the object up and down (above  and below to the Workplane's surface) as well as rotate it.  To lift the box off the Workplane, left-click the box to select it and notice that a small black cone appears above the box.  Click and drag this cone using the left mouse button to move the box up and down relative to the Workplane surface.
+INSERT tinkercad_workplane_box_lift.png 
+Figure 3-8: Lifting the box above the Workplane
+As you lift the box you'll once again see the distance it moves displayed, and a shadow will appear below the box as well.
+With the box still selected, look closely at the corners and you'll see curved double-pointed arrows.  If you hover your mouse pointer over one of these arrows, a protractor will appear showing you which axis will rotate if you drag that arrow.
+INSERT tinkercad_workplane_box_rotate.png
+Figure 3-9: Rotating the box
+To rotate the box, click and drag this arrow with the left mouse button.  Again measurements will appear to indicate how much the box has rotated.  Another nice feature of the rotate tool is that when your mouse is close to the box the rotation increments will be “coarse” and the box will “snap” between these positions.  If you need more fine-grained control, move the mouse pointer further away from the box (while still holding down the left button) and the protractor will display finer measurements, allowing the box to rotate more freely.  
+Changing the Size
+Left-click the Box again to select it, and you'll notice that small black and white boxes appear around the perimeter of the object.  All of these boxes can be used to resize the object, but they behave a little bit differently.
+INSERT tinkercad_workplane_box_sizing2.png
+Figure 3-10: Changing the size of the box
+The white boxes at the corners can be dragged with the left mouse button to resize both sides the white box connects to at the same time.  This can be useful for quickly resizing an object to get it roughly into position.
+The black boxes constrain resizing to one dimension, allowing you for example to change the width of the Box without changing the length.  This is nice when you have one side where you want it and don't want to accidentally change it when you resize another side.
+The white box at the top of the object is a bit of an anomaly.  It changes the height of the object, constrained to the Z dimension.  Since it's constrained you would think it should be a black box, but it's not; my only guess is that it's white to differentiate it from the black cone above used to move the object up and down, but I  point this out to avoid confusion.
+Changing the View
+The default Workplane view is good for getting an overview of the design, but you'll want to be able to look at your work from different angles as you create more complex designs.  In the top-left corner of the page there are a couple controls you can use to quickly navigate the Workplane.
+INSERT close-up of nav controls (taken from tinkercad_workplane_box_sizing2.png)
+Figure 3-11: Built-in navigation controls
+Clicking the up and down arrows will tilt the Workplane up toward you or down and away.  The left and right arrows will rotate the Workplane to the left or right.  The plus and minus buttons will move you closer or further from the Workplane.  The House button in the center will return you to the default view.
+In addition to the navigation buttons you can use the mouse to move the Workplane around.  Using the right mouse button, click and drag the Workplane left, right, up or down to rotate the Workplane around the center axis.  Hold down the shift key and drag to “slide” the Workplane.  Use the scroll wheel of your mouse to zoom in or out of the model.
+Now use the “Home” button to return the Workplane to the default position.
+Constructive Solid Geometry (CSG)
+Tinkercad employs Constructive solid geometry (CSG) to allow you to create complex models from basic solid objects.  Essentially this means you can add or subtract simple objects to create complex ones (a more detailed introduction to CSG can be found on Wikipedia: https://en.wikipedia.org/wiki/Constructive_solid_geometry).
+To demonstrate this powerful technique we're going to take a bite out of our box.  Start by adding a sphere to the Workplane using the same steps we used above to add a box, and drop it near the box, so the two are overlapping, but not completely covering one another.
+INSERT tinkercad_workplane_box_and_sphere_separate.png
+Figure 3-12: Box and sphere overlapping but still separate objects
+Left-click on the Workplan to deselect the sphere.
+Addition
+At this point the box and the sphere are still two separate objects.  If you were to click one of them and drag it, the other would be left behind.  The first CSG technique we're going to apply is addition, which will turn the two objects into one.
+To add the box to the sphere, left-click the box, then press and hold the shift key and left-click the sphere.
+INSERT tinkercad_workplane_box_and_sphere_selected.png
+Figure 3-13: Both box and sphere solids selected at the same time
+Now that more than one object is selected the Group button in the menu bar is activated .  Click the Group button and the separate objects become one.
+SHOW CLOSE-UP OF GROUP BUTTON?
+INSERT tinkercad_workplane_box_and_sphere_added.png
+Figure 3-14: Box and sphere combined into a single object through CSG addition 
+You'll notice that this new object inherits a single color from one of the two separate objects, and if you left-click either shape and move it, they move together.  You may also notice that the Group button is no longer active and the Ungroup button has activated when the new object is selected.  Select the new object and click Ungroup to turn the box and sphere back into separate objects.
+Subtraction
+If CSG addition turns two objects into one, what does subtraction do?  The end result is the same (one object), with one “difference”.
+Left-click the sphere and look at the Inspector.  In addition to changing the color of the object, the Inspector can toggle the object's Hole property.  Click the Hole button in the inspector and observe what happens to the sphere.
+CLOSE-UP OF INSPECTOR VIEW?
+INSERT tinkercad_workplane_box_and_sphere_hole.png
+Figure 3-15: Box and sphere combined into a single object through CSG subtraction
+The sphere becomes transparent.  This indicates that if the sphere is Grouped with another object, it will form a hole in the other object.  With the sphere still selected, hold down shift and left-click the box, then click the Group button.
+INSERT tinkercad_workplane_box_and_sphere_subtraction_close_up.png
+Figure 3-16: A closer view of the result of the subtraction operation
+The sphere disappears and leaves a hole in the box.  In CSG terms this is called subtraction; the sphere object was subtracted from the box object.  Tinkercad calls both addition and subtraction grouping to keep things simple but it is just like adding a positive number and a negative number, the result is a smaller number.
+As you can imagine almost any shape can be created through the addition and subtraction of these basic solids.  Thinking in these terms can take some getting used to, but once you get the hang of it, it is very powerful.
+Now that we know the basics of modeling in Tinkercad, let's create a more complex model.  Before continuing, delete any remaining objects on the Workplane by selecting them with the left mouse button and pressing the delete key.
+Building a House
+Now let's build something more interesting to get a feel for how Tinkercad works. To build a house, first think about the shapes that can be used to form a simple house: a Box and a Roof if you’re building a classic Western style house. Start by placing these two shapes on the Workplane as shown in Figure 3-17.
+INSERT FIGURE tinkercad_house_box_and_roof2.png
+Figure 3-17: box and roof added to the Workplane
+Now, left-click the Roof. You should see a the black cone appear above it. Use this cone to raise the roof up higher than the top of the box as shown in Figure 3-18.
+INSERT tinkercad_house_raise_roof.png
+Figure 3-18: Raising the roof
+Notice again in Figure 3-18 that Tinkercad displays the distance you've moved the object as you drag it. The default height for new Boxes in Tinkercad is 20mm and since we haven’t changed the size of the box we know that if we raise the roof to 20mm, it will sit directly on top of the Box. Once you’ve raised the Roof to 20mm, click inside the Roof and drag it over the cube to create the roof of the house. Verify that the roof looks right by selecting each view of the Workplane).
+INSERT tinkercad_house_roof_on_box.png
+Figure 3-19: Setting the roof down on top of the box
+Remeber that you can use the arrow keys on your keyboard to move objects precisely. The Snap Grid setting at the lower-right corner of the Workplane can also help by controlling the degree of movement. Higher numbers move objects in larger steps.
+Combining the Shapes
+Once the Roof is on the Box, turn the two objects into a single one by by grouping them like we did with the box and sphere earlier. To do so,
+Select one object, hold down the Shift key, and select the second object.
+Once both objects are selected, click the Group icon at the top right fo the Workplace. 
+The Box and the Roof should become one object, all the same color as shown in Figure 3-20. Now, any changes you make to the placement or size of your house will affect both objects as one. 
+INSERT tinkercad_house_box_and_roof_grouped.png
+Figure 3-20: With the box and roof grouped, we have the outer shape of the house
+Note	Once you’re done with a design, you should combine all of its shapes before exporting it for printing or your results can be unpredictable. If you decide to change objects independently at a later stage, use the Ungroup icon.
+Hollowing Out the Inside
+Right now, your little house is a solid block of stuff, which is hard to live in. We need a way to get inside and move around. To give your house an interior, we’ll use a Box with the Hole property set to carve out the inside and add an entrance. But first, let’s get the roof out of the way to make those things easier. Click Ungroup to separate the roof from the box, then slide the roof out of the way for now. Now:
+Add a new Box to the Workplane.
+Left click the new Box and use the black boxes on the sides to reduce its width and length (X and Y values) to fit inside the Box that we’re using for our house, leaving one millimeter for the walls. For example, if you used the default 20 mm size for the first box, using 16 mm for the second one will leave 2mm-thick walls when we're done.
+Adjust the height of the new Box so that it’s 2 millimeters taller than the Box that’s making up the house.
+With the new box selected, click the Hole property in the Inspector then drag the new box into the center of the old one as shown in Figure 3-21.
+INSERT tinkercad_house_hole_centered.png
+Figure 3-21: Using a box with the hole property set to carve out the inside of the house
+Use the black cone to raise the new Box so that it’s 2 mm above the workplane (the floor of the house) to create a floor.
+Finally, with the new box still selected, shift-click the outside of the original Box and click the Group button on the top-right of the screen. This will combine the original solid box with the Hole box and carve out the inside of your house as shown in Figure 3-22.
+INSERT tinkercad_house_hole_grouped.png
+Figure 3-22: By grouping the two boxes, the inside of the house is made hollow
+Now can drag the roof back on. Since we haven’t added any external openings,, the house should look as it did in Figure 3-19 but it’s now hollow inside.
+Adding Windows and a Door
+Of course we still need a way to get into our house, and some windows would be nice. Use what you now know about creating holes to carve out a doorway and some nice windows to create a house something like the one shown in Figure 3-23. Be sure to leave enough material behind (2mm is usually enough) to support the structure when its later printed.
+INSERTtinkercad_house_done.png
+Figure 3-23: An example of a house with additional holes for windows and a door
+Exporting the House Model for Printing
+Once you’re happy with your design, export it for printing from Tinkercad. Click the Design menu, then select Download for 3D Printing. When a dialog box asks you to select a format, click STL from the various options and the file you need for printing should download. (Once you select a format, the dialog box remains open, but that doesn’t mean the download didn’t work. Check the directory where you saved the file to make sure before you try again.)
+Tinkercad does a lot to make 3D design easy and convenient for beginners and convenient casual users. Needing a constant Internet connection reduces that convenience sometimes, and performance can be intermittent, but its ease-of-use of and overall convenience often outweigh these disadvantages.
+If you enjoyed working with Tinkercad, be sure to complete the tutorial (click LEARN on the top of the Dashboard page).  Tinkercad is easy to start with but also offers a lot of very helpful tools that can make building more complex models easier, and completing the tutorial will introduce you to these features.
+If Tinkercad wasn't your cup of tea, or you're curious about other tools for creating 3D models, here are number of alternatives that take a different approaches from Tinkercad.
+Other CAD Tools
+Tinkercad is a great way to learn the basics of CAD, and if you like it can be used to create some very sophisticated designs.  However it's important to know that there's a variety of different CAD tools that provide radically different ways of creating and working with models, and I recommend trying a few of them to see if there is one that feels more natural to you.
+Here we'll take a quick look at a handful of tools that do things a bit differently than Tinkercad.  I recommend giving each a try.
+OpenSCAD
+INSERT openscad_wheel.png
+Figure 3-24: OpenSCAD showing a rendered wheel and the code used to model it
+Website: http://www.openscad.org/
+OpenSCAD takes a radically different approach to modeling when compared to Tinkercad.  Instead of working directly with solids using the mouse, everything in OpenSCAD is created by writing code.
+Like Tinkercad, OpenSCAD uses CSG to create complex models.  Solids are added  and manipulated on the workplane using programming functions to add, subtract, etc. from one another.
+OpenSCAD might sound difficult, but if you're familiar with programming you may feel more at home than when using more visual tools.  Additionally, it is easy to make “parameterized” models in OpenSCAD, which means you can define variables which can then be modified to alter the design in complex ways without having to modify the original model (for example, changing the number of teeth on a gear just by typing in a different value and re-rendering the model).  
+Blender
+INSERT blender_wheel.png
+Figure 3-25: Blender displaying a render of a model wheel
+Website: http://www.blender.org/
+Blender is a very popular, professional-grade 3D modeling application.  Working with Blender is similar to Tinkercad however it is significantly more powerful.  To wield this power requires an investment in learning that is orders of magnitude greater than Tinkercad.  If you enjoy the way that Tinkercad works, but find you are bumping up against the limits of it's capabilities, Blender may be the next step for you.
+Antimony
+INSERT antimony_wheel.png
+Figure 3-26: Antimony model of a wheel showing rendered wheel on the right and modeling graph on the left
+Website: http://www.mattkeeter.com/projects/antimony/3/
+Antimony is somewhat new on the scene and at the time of this writing, and should probably be considered experimental, but I include it here because it has a very unique method of creating models.  It is self-described as “...a computer-aided design (CAD) tool from a parallel universe in which CAD software evolved from Lisp machines rather than drafting tables”.  It can be though of as somewhere in-between OpenSCAD and Blender, in terms of learning curve and complexity.
+Models are created in Antimony using the same CSG process as other CAD tools, however instead directly manipulating solids with the mouse, or writing code to define and modify them, Antimony uses a “connected graph” approach to define the solids in the model and apply transforms to them.  The window on the left in the screenshot above displays the graph; each “list” describes a solid or a transform (addition, subtraction, union, etc.).  The elements of the graph are connected via the lines you see between the lists, and these lines establish the order in which the solids and transforms are applied to the final model.  The results of these connections are displayed in realtime in the window on the right.
+This might sound complicated, but it will feel familiar to anyone who has worked with a tool that uses this type of interface (audio and video processing tools come to mind).  It takes a little getting used to, but once you get the hang of it, it has the power of a tool like OpenSCAD without the need to write code.  It is also easier to restructure a model on-the-fly in Antimony by simply “re-wiring” the connections between objects than it is to refactor code in OpenSCAD, or manually re-arrange solids in tools like Tinkercad and Blender.  
+Perhaps just as interesting is that everything in an Antimony, like OpenSCAD, is defined by code; you just don't see it.  However, you can click a control on any node to reveal the Python code that defines it, allowing you to work directly with the object in algorithmic ways.
+In this chapter, we used Tinkercad to create our own models for printing from scratch, and introduced a number of other CAD applications that can also be used to create your own designs.  What type of tool you choose is up to you, and may change depending on the type of modeling project you are working on. They key requirement for modeling software is that the output is an STL file that can be fed to the slicing software, which is the next step in the 3D printing process—and by no coincidence, the focus of the next chapter of this book as well.
