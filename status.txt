@@ -1,7 +1,7 @@
 Chapter		outlined		complete		submitted		revised		tech	current		notes
 1			outlined		complete		submitted
 2			outlined		complete		submitted
-3			outlined		complete		submitted		revised		tech
+3			outlined		complete		submitted		
 4			outlined		complete		submitted		revised
 5			outlined		complete		submitted
 6			outlined		complete		submitted
