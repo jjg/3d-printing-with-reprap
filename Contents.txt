@@ -1,0 +1,108 @@
+﻿Contents (revised)
+
+1. Introduction
+2. History of 3D Printing
+3. Modeling
+4. Preparing Your Model for Printing
+5. Printing
+1. Preparing to Print
+2. Host Software
+3. Monitoring a print job
+4. Exercise - Using a print service
+5. Cleaning up the finished product
+6. Exercise – The $5 3D Printer
+6. Improving
+1. Introduction
+2. Keeping a journal
+3. Studying other models
+4. Knowing your printer
+5. Modifying your printer
+6. Experiment
+7. Sharing
+1. Share your models online
+2. Social networking
+1.  Thingiverse
+2. Github
+3. Thing Tracker Network
+3. Share your models in real life
+4. Contribute to the community
+1. Share your successes, but more importantly your failures
+2. Share your notes and journals
+3. Share your experiments and results
+4. Become a 3D printing ambassador in your community
+8. Projects
+1. The $5 3D Printer
+2. Print your DNA
+3. Design a replacement part
+4. 
+9. What's Next?
+1. Practice
+2. Teach
+3. Learn more about modeling
+4. Learn more about printing
+5. Build your own printer (lead-in to next book...)
+
+Contents (original)
+
+1. Introduction
+	1. What is 3D printing
+	2. What is “Reprap”
+	3. Who should read this book
+	4. What you’ll need
+ 2. History of 3D Printing (add “anatomy” section)
+ 	1. Origin
+ 	2. Industrial use
+ 	3. The Reprap project
+ 	4. Desktop manufacturing
+ 	5. 3D printing today (add “current” section)
+ 3. Modeling
+ 	1. History of & introduction to 3D modeling
+ 	2. What to design & why
+ 	3. 3D modeling tools (list may change)
+			1. Minecraft
+			2. Tinkercad
+			3. OpenSCAD
+			4. Blender
+ 4. Processing
+ 	1. Preparing your model for printing
+ 	2. Cleaning up the model (things to look out for)
+ 	3. Slicing
+ 5. Printing
+ 	1. Preparing to print
+ 	2. Host software
+ 	3. Monitoring a print job
+ 	4. Using a print service
+ 	5. Cleaning-up the finished product
+ 6. Improving
+ 	1. Introduction (how to make your prints better each time)
+ 	2. Keep a journal
+ 	3. Study other’s models
+ 	4. Know your printer’s capabilities
+ 	5. Modify your printer
+ 	6. Experiment
+ 7. Sharing
+	1. Share your models online
+		1. Social networking
+		2. Thingiverse
+ 		3. Github
+ 		4. Thing Tracker Network
+ 	2. Share your models in real life
+ 	3. Contribute to the community
+ 		1. Share your successes, but more importantly your failures
+ 		2. Share your notes and journals
+ 		3. Share your experiments and results
+ 		4. Become a 3D printing ambassador in your community
+ 8. Sample Projects & Exercises
+ 	1. Introduction to projects
+ 	2. Easy designs & safe prints
+ 	3. Challenging designs and risky prints
+ 	4. Things that move
+ 	5. Things that do work
+ 	6. Things that look beautiful
+ 	7. Things that 3D printers do best
+ 9. What’s Next?
+ 	1. Practice
+ 	2. Teach
+ 	3. Learn more about modeling
+ 	4. Learn more about printing
+ 	5. Build your own printer (lead-in to next book...)
