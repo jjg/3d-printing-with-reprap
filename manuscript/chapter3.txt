@@ -20,7 +20,7 @@ For now we're going to skip the tutorial and create our own model, so select Exi
 INSERT tinkercad_dashboard.png 
 Prod: HIGHLIGHT "Create project"?
 
-![The Tinkercad Dashboard(images/chapter_3/tinkercad_dashboard.png)
+![The Tinkercad Dashboard](images/chapter_3/tinkercad_dashboard.png)
 
 This will add Project 1 to the Dashboard.  Click Create new design to create a new model and open the Workplane page.
 
