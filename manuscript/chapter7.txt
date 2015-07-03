@@ -1,5 +1,5 @@
-﻿7
-Sharing
+# Chapter 7: Sharing
+
 More than any other thing, sharing has been the single most important thing in the development of Desktop Manufacturing.  Sharing is what allowed the Reprap project to bring 3d printing to everyone, and sharing is what has allowed Reprap printers to drop in price and improve in quality year after year.  We wouldn't have access to 3d printing technology if it wasn't for sharing, which is why I've dedicated an entire chapter to the subject.
 
 The good news is that there's so many ways to share your 3d printing work that chances are you'll find a couple that are easy and fun, in fact you're probably doing them already.

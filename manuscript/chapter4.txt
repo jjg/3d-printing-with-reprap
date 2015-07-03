@@ -1,5 +1,5 @@
-﻿4
-Processing
+# Chapter 4: Processing
+
 Preparing Your Model for Printing
 Now that you've designed something awesome let's print it!  Wait, none of these modeling programs have a “Print” button; what's up with that?
 Turns out we have a little more work to do before we can feed the model to the printer.  In this chapter will walk you through the steps necessary to prepare your model for the actual printing process.

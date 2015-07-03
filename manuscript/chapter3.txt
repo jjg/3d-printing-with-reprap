@@ -1,5 +1,5 @@
-﻿3
-3D Modeling Tools
+#Chapter 3: 3D Modeling Tools
+
 In the world of 3D printing, the term modeling describes the process of designing a model to be 3D printed. You’ll often model three-dimensional objects using digital tools alone but you can also create models using physical media such as paper or clay or a scan of a physical model. Whatever method you choose, you’ll ultimately use your model to produce a file that you’ll feed up the 3D printing chain.
 In this book, we’ll focus on digital rather than physical modeling and in this chapter, I’ll walk you through using Tinkercad, a free-to-use, web-based modeling tool to get you started modeling quickly.  I'll also introduce you to several other tools that demonstrate the diversity of modeling tools available.
 Tinkercad

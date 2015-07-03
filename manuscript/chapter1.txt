@@ -3,7 +3,7 @@
 ## What is 3D printing?
 Simply put, 3D printing is the process of turning an electronic three-dimensional model and turning into a real, physical, tangible object.
 
-
+![](images/chapter_1/3dprintingwithreprap01_01.jpg)
 
 This might sound complicated, but it's only slightly more complex than printing two-dimensional objects (like this page) which you're probably already familiar with.
 

@@ -1,5 +1,5 @@
-﻿6
-Improving
+# Chapter 6: Improving
+
 Introduction
 Some things can be taught or learned from a book, other things can only be learned by experience.  3D printing is both of these things.  I hope you've learned a thing or two from reading this book so far, and I really hope you've had a chance to try some of these things out for yourself as well.  
 

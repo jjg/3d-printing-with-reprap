@@ -1,5 +1,5 @@
-﻿2
-Brief History of 3D Printing
+# Chapter 2: Brief History of 3D Printing
+
 Origin
 Creation of the first commercial 3D printer is generally attributed to Charles W. Hull and the company 3D Systems in 1986.  Hull coined (and patented) the term “stereolithography” which refers to the process of making solid objects by “printing” thin layers of ultraviolet curable material one on top of another (used genetically today to refer to any “additive” 3D printing process, not just cured resin printers).
 

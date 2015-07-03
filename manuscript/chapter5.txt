@@ -1,5 +1,5 @@
-﻿5
-Printing
+# Chapter 5: Printing
+
 Preparing to print
 With Gcode in hand we're finally ready to make the move from the electronic world into the digital world.  As with most things in the Reprap world there are almost as many different ways to carry out printing your model as there are variations in printer design, but in this chapter we'll cover the most common workflows and even present a way to get the job done for next to nothing.
 Host Software
