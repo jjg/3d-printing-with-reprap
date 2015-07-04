@@ -234,14 +234,22 @@ OpenSCAD might sound difficult, but if you're familiar with programming you may 
 INSERT blender_wheel.png
 ![Blender displaying a render of a model wheel](images/chapter_3/blender_wheel.png)
 
-Website: http://www.blender.org/
+* Website: http://www.blender.org/
+
 Blender is a very popular, professional-grade 3D modeling application.  Working with Blender is similar to Tinkercad however it is significantly more powerful.  To wield this power requires an investment in learning that is orders of magnitude greater than Tinkercad.  If you enjoy the way that Tinkercad works, but find you are bumping up against the limits of it's capabilities, Blender may be the next step for you.
-Antimony
+
+### Antimony
+
 INSERT antimony_wheel.png
-Figure 3-26: Antimony model of a wheel showing rendered wheel on the right and modeling graph on the left
-Website: http://www.mattkeeter.com/projects/antimony/3/
-Antimony is somewhat new on the scene and at the time of this writing, and should probably be considered experimental, but I include it here because it has a very unique method of creating models.  It is self-described as “...a computer-aided design (CAD) tool from a parallel universe in which CAD software evolved from Lisp machines rather than drafting tables”.  It can be though of as somewhere in-between OpenSCAD and Blender, in terms of learning curve and complexity.
-Models are created in Antimony using the same CSG process as other CAD tools, however instead directly manipulating solids with the mouse, or writing code to define and modify them, Antimony uses a “connected graph” approach to define the solids in the model and apply transforms to them.  The window on the left in the screenshot above displays the graph; each “list” describes a solid or a transform (addition, subtraction, union, etc.).  The elements of the graph are connected via the lines you see between the lists, and these lines establish the order in which the solids and transforms are applied to the final model.  The results of these connections are displayed in realtime in the window on the right.
-This might sound complicated, but it will feel familiar to anyone who has worked with a tool that uses this type of interface (audio and video processing tools come to mind).  It takes a little getting used to, but once you get the hang of it, it has the power of a tool like OpenSCAD without the need to write code.  It is also easier to restructure a model on-the-fly in Antimony by simply “re-wiring” the connections between objects than it is to refactor code in OpenSCAD, or manually re-arrange solids in tools like Tinkercad and Blender.  
+![Antimony model of a wheel showing rendered wheel on the right and modeling graph on the left](images/chapter_3/antimony_wheel.png)
+
+* Website: http://www.mattkeeter.com/projects/antimony/3/
+
+Antimony is somewhat new on the scene and at the time of this writing, and should probably be considered experimental, but I include it here because it has a very unique method of creating models.  It is self-described as "...a computer-aided design (CAD) tool from a parallel universe in which CAD software evolved from Lisp machines rather than drafting tables".  It can be though of as somewhere in-between OpenSCAD and Blender, in terms of learning curve and complexity.
+
+Models are created in Antimony using the same CSG process as other CAD tools, however instead directly manipulating solids with the mouse, or writing code to define and modify them, Antimony uses a "connected graph" approach to define the solids in the model and apply transforms to them.  The window on the left in the screenshot above displays the graph; each "list" describes a solid or a transform (addition, subtraction, union, etc.).  The elements of the graph are connected via the lines you see between the lists, and these lines establish the order in which the solids and transforms are applied to the final model.  The results of these connections are displayed in realtime in the window on the right.
+
+This might sound complicated, but it will feel familiar to anyone who has worked with a tool that uses this type of interface (audio and video processing tools come to mind).  It takes a little getting used to, but once you get the hang of it, it has the power of a tool like OpenSCAD without the need to write code.  It is also easier to restructure a model on-the-fly in Antimony by simply "re-wiring" the connections between objects than it is to refactor code in OpenSCAD, or manually re-arrange solids in tools like Tinkercad and Blender.  
 Perhaps just as interesting is that everything in an Antimony, like OpenSCAD, is defined by code; you just don't see it.  However, you can click a control on any node to reveal the Python code that defines it, allowing you to work directly with the object in algorithmic ways.
-In this chapter, we used Tinkercad to create our own models for printing from scratch, and introduced a number of other CAD applications that can also be used to create your own designs.  What type of tool you choose is up to you, and may change depending on the type of modeling project you are working on. They key requirement for modeling software is that the output is an STL file that can be fed to the slicing software, which is the next step in the 3D printing process—and by no coincidence, the focus of the next chapter of this book as well.
+
+In this chapter, we used Tinkercad to create our own models for printing from scratch, and introduced a number of other CAD applications that can also be used to create your own designs.  What type of tool you choose is up to you, and may change depending on the type of modeling project you are working on. They key requirement for modeling software is that the output is an STL file that can be fed to the slicing software, which is the next step in the 3D printing process, and by no coincidence, the focus of the next chapter of this book as well.
