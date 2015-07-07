@@ -12,30 +12,30 @@ Overhang
 The first thing we need to consider is how the printer goes about putting material down to create the model.  Current RepRap designs still favor a “deposition” model where a print “head” deposits material on a build surface layer-by-layer until the model is complete.  This means that each new layer has to be laid down on top of the previous layer, which means that it can't print a model that has “overhangs” that project out of the sides of the model above the first layer.
 Well, not exactly.  Most RepRaps have some some level of “bridging” capability (the ability to print “in thin air”) by rapidly cooling the liquid filament as it emerges from the nozzle.  Just how far you can push this varies from printer to printer (and is best determined by experimentation), but a good general rule is to keep the angle of these overhangs under 45 degrees.
 
-insert < 3dprintingwithreprap04_01.jpg
+>insert 3dprintingwithreprap04_01.jpg<
 
 Often the problem of overhangs can be addressed simply by rotating the object such that the larger parts are at the bottom of the print, resting safely on the print bed.
 
-insert < 3dprintingwithreprap04_02.jpg>
+> insert 3dprintingwithreprap04_02.jpg <
 
 Sometimes these problems will just “solve” themselves.  On more than one occasion I've overlooked an obvious overhang problem with a design but sent it to the printer only to return and find that the model printed acceptably.  
 
 In one case I printed a little house model and stupidly placed it on the bed with a closed wall facing up.  Not only did this create a 90 degree overhang, but the wall had windows and a door cut into it, so no amount of “bridging” capability would have saved me here.
 
-insert <3dprintingwithreprap04_03.jpg>
+> insert 3dprintingwithreprap04_03.jpg
 
 However, through no small amount of luck the printer was able to build-up a number of layers behind this wall, which turned out terrible, but eventually it had deposited enough material that the final outside of the wall turned out pretty good.  Since the inside of the house wouldn't be visible in the application it was designed for, the mess created to complete the model was inconsequential.
 
-Insert <3dprintingwithreprap04_04.jpg>
+> Insert 3dprintingwithreprap04_04.jpg <
 
 Watertight
 In order for most slicing software to process a model it must be “watertight”.  This means that all of the individual shapes that make up the model need to be merged together.  This can be harder than it sounds to achieve, and depending on the sophistication of your modeling software you may or may not get some help from it solving watertight problems.
 
-insert <3dprintingwithreprap04_05.jpg>
+> insert 3dprintingwithreprap04_05.jpg <
 
 If you've checked all your joints and everything seems to overlap sufficiently, or you're working with a model that you don't have the design files for there are some automated tools that can try and help you out.  In these cases it's worth submitting the model to Netfabb's cloud service (free at the time of writing) which will attempt to identify and correct any “holes” in the design.
 
-insert <3dprintingwithreprap04_06.png>
+> insert 3dprintingwithreprap04_06.png <
 
 After you receive the repaired file be sure to review to make sure that any changes Netfabb may have made don't impact how suitable the part is for your application (most of the time the changes are invisible, but better to find out now than after hours of printing).
 
@@ -44,13 +44,13 @@ This is an issue that can arise based on the interplay between the model, the pr
 
 Objects printed by a deposition-style printer are usually constructed from a combination of two types of print objects called “shells” and “infill”.  Shells are solid walls of plastic laid-down in an outline of the models' shape.  An easy way to imagine this is to imagine printing a ring; first the printer lays down a circle of plastic for the outside of the ring, then it lays down a circle of plastic for the inside of the ring and finally the space between these two “shells” is “infilled” with plastic.
 
-insert <3dprintingwithreprap04_07.jpg>
+> insert 3dprintingwithreprap04_07.jpg <
 
 The trick is that there are minimum sizes for the width of these types of output.  The minimum width of a shell is limited to the size of the printer's nozzle, and while technically minimum infill size is limited by the same, practically speaking infill that is thinner than three shell widths is impractical (in these cases is usually makes more sense to use multiple shells).
 
 But what does this have to do with the model, isn't this the slicing software's problem?  Perhaps, but the slicer doesn't know as much about what you want to do with the part as you do so we want to make sure we give it the best shot at doing things right as we can.
 
-insert <3dprintingwithreprap04_08.jpg>
+> insert 3dprintingwithreprap04_08.jpg <
 
 To this end, look carefully at any thin walls or other thin structures in your model and if they require strength consider making them thick enough that there is room for some infill material between them.  Conversely, if they don't need the extra strength consider making them thinner to match the shell thickness which will prevent wasting time and material doing small amounts of infill where it's unnecessary.
 
@@ -105,7 +105,7 @@ Infill pattern is an interesting topic.  When I started building my first RepRap
 
 The one agreed upon fact about infill is that the more complex it is, the longer it takes.  Honeycomb infill takes about twice as long as rectilinear, and other designs are even slower.  Here again you'll need to consider the value of the pattern in relation to the print time and make a choice on a case-by-case basis.  Personally, I now use honeycomb by default and I use rectilinear for solid layers (top and bottom).
 
-Insert <3dprintingwithreprap04_09.jpg>
+> Insert 3dprintingwithreprap04_09.jpg <
 
 Here you can clearly see the vertical shells of the model (around the outside), the honeycomb fill and the beginnings of a horizontal shell (seen here covering half of the top surface).
 
@@ -134,7 +134,7 @@ In general if there are settings in your slicing software that are not described
 Let's slice it already!
 Once all the settings are in order it's time to generate some gcode!  Load your model up in the slicing program (some have a “platter” where you can add multiple models to process together, others have a simple File->Open interface) and start the slicing process.
 
-insert <3dprintingwithreprap04_10.png>
+> insert 3dprintingwithreprap04_10.png <
 
 Slicing can take awhile, the software is working very hard to find the best combination of printer moves to translate the shape of your model into lines of plastic on the print bed.  Writing slicing software is a black art, bordering on alchemy so be patient and grab a beverage while your software does the work for you.
 
