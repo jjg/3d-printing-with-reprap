@@ -10,7 +10,7 @@ By combining microprocessor control to the stereolithography process, Hull was a
 Industrial Use
 Early industrial (non-experimental) applications for 3D printing focused primarily in the area of research and design.  These machines ushered in the era of “rapid prototyping”, allowing designers and engineers to produce physical models of designs in hours instead of weeks, without the aid of skilled craftspeople and machinists.  
 
-<image of early commercial 3d printer>
+>image of early commercial 3d printer<
 
 These early machines cost tens or hundreds of thousands of dollars to acquire and thousands of dollars annually to operate.  They used proprietary materials that were available only from the original equipment manufacturer (OEM) and often required maintenance contracts that ensured ongoing cost to operate (and revenue for the OEM).  This arrangement is very similar to how early computer systems were used, before the advent personal computer.
 
