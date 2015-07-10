@@ -180,30 +180,14 @@ Fire up the hot glue gun and get it to temperature.  Once it's ready begin proce
 
 I have included a table of basic Gcodes and a description of what movements you'll need to make to complete them.  Once you've executed one line mark it complete and then move on to the next one.
 
-| Code | Example | Description
-|------|---------|-------------
-| X, Y, Z |
-
-Coordinates along the X, Y and Z axis.
-E
-
-Amount of material to extrude in mm.
-F
-
-Feedrate: how fast to move the printhead
-;
-;LAYER:1
-A comment, the printer ignores these but they are helpful for humans reading the Gcode.
-G0
-G0 F900 X95 Y83
-Rapid Move: move as quickly as possible from the current position to the specified coordinates.  Usually used to move the printhead when not laying down material.
-G1
-G1 X78 Y58 E10
-Controlled Move: move from the current position to the specified coordinates.  In this example the E axis is included to indicate that 10mm of material should be extruded during the move
-
-
-
-
+| Code    | Example         | Description
+|---------|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| X, Y, Z | Y13.13          | Coordinates along the X, Y and Z axis.
+| E       | E262.76105      | Amount of material to extrude in mm.
+| F       |                 | Feedrate: how fast to move the printhead
+| ;       | ;LAYER:1        | A comment, the printer ignores these but they are helpful for humans reading the Gcode.
+| G0      | G0 F900 X95 Y83 | Rapid Move: move as quickly as possible from the current position to the specified coordinates.  Usually used to move the printhead when not laying down material.
+| G1      | G1 X78 Y58 E10  | Controlled Move: move from the current position to the specified coordinates.  In this example the E axis is included to indicate that 10mm of material should be extruded during the move
 
 Now that you know how to read the code, let's get started!  Here's a few lines from the beginning of a simple Gcode file:
 
