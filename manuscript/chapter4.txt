@@ -12,15 +12,19 @@ A legitimate question.  There's a few things that you can design into your model
 The first thing we need to consider is how the printer goes about putting material down to create the model.  Current RepRap designs still favor a “deposition” model where a print “head” deposits material on a build surface layer-by-layer until the model is complete.  This means that each new layer has to be laid down on top of the previous layer, which means that it can't print a model that has “overhangs” that project out of the sides of the model above the first layer.
 Well, not exactly.  Most RepRaps have some some level of “bridging” capability (the ability to print “in thin air”) by rapidly cooling the liquid filament as it emerges from the nozzle.  Just how far you can push this varies from printer to printer (and is best determined by experimentation), but a good general rule is to keep the angle of these overhangs under 45 degrees.
 
-INSERT 3dprintingwithreprap04_01.jpg
+![The arms on this model overhang the bed, but at a safe 45 degree angle](images/chapter_4/04_slicing.png)
+
+![On the other hand, this model is likely to have problems as the arms are at a 90 degree angle from the body](images/chapter_4/bed_bad.png)
 
 Often the problem of overhangs can be addressed simply by rotating the object such that the larger parts are at the bottom of the print, resting safely on the print bed.
 
-INSERT 3dprintingwithreprap04_02.jpg
+![The same model above that would not print well can be printed safely by simply rotating the model to lie flat on the bed](images/chapter_4/good_bed.png)
 
-Sometimes these problems will just “solve” themselves.  On more than one occasion I've overlooked an obvious overhang problem with a design but sent it to the printer only to return and find that the model printed acceptably.
+That said, sometimes these problems will just “solve” themselves.  On more than one occasion I've overlooked an obvious overhang problem with a design but sent it to the printer only to return and find that the model printed acceptably.  When in doubt, try printing and see what happens!
 
 In one case I printed a little house model and stupidly placed it on the bed with a closed wall facing up.  Not only did this create a 90 degree overhang, but the wall had windows and a door cut into it, so no amount of “bridging” capability would have saved me here.
+
+INSERT SIDEBAR
 
 INSERT 3dprintingwithreprap04_03.jpg
 
@@ -28,29 +32,18 @@ However, through no small amount of luck the printer was able to build-up a numb
 
 INSERT 3dprintingwithreprap04_04.jpg
 
-###Watertight
-In order for most slicing software to process a model it must be “watertight”.  This means that all of the individual shapes that make up the model need to be merged together.  This can be harder than it sounds to achieve, and depending on the sophistication of your modeling software you may or may not get some help from it solving watertight problems.
-
-INSERT 3dprintingwithreprap04_05.jpg
-
-If you've checked all your joints and everything seems to overlap sufficiently, or you're working with a model that you don't have the design files for there are some automated tools that can try and help you out.  In these cases it's worth submitting the model to Netfabb's cloud service (free at the time of writing) which will attempt to identify and correct any “holes” in the design.
-
-INSERT 3dprintingwithreprap04_06.png
-
-After you receive the repaired file be sure to review to make sure that any changes Netfabb may have made don't impact how suitable the part is for your application (most of the time the changes are invisible, but better to find out now than after hours of printing).
-
 ###Shells, infill & wall thickness
 This is an issue that can arise based on the interplay between the model, the printer's capabilities and the slicing settings used.
 
 Objects printed by a deposition-style printer are usually constructed from a combination of two types of print objects called “shells” and “infill”.  Shells are solid walls of plastic laid-down in an outline of the models' shape.  An easy way to imagine this is to imagine printing a ring; first the printer lays down a circle of plastic for the outside of the ring, then it lays down a circle of plastic for the inside of the ring and finally the space between these two “shells” is “infilled” with plastic.
 
-INSERT 3dprintingwithreprap04_07.jpg
+![Here you can see the shell of the print laid down, and the infill being applied](images/chapter_4/shell_and_fill.jpg)
 
 The trick is that there are minimum sizes for the width of these types of output.  The minimum width of a shell is limited to the size of the printer's nozzle, and while technically minimum infill size is limited by the same, practically speaking infill that is thinner than three shell widths is impractical (in these cases is usually makes more sense to use multiple shells).
 
 But what does this have to do with the model, isn't this the slicing software's problem?  Perhaps, but the slicer doesn't know as much about what you want to do with the part as you do so we want to make sure we give it the best shot at doing things right as we can.
 
-INSERT 3dprintingwithreprap04_08.jpg
+![The walls of this model are so thin that no infill was used at all, just a continuous shell](images/chapter_4/04_no_infill.jpg)
 
 To this end, look carefully at any thin walls or other thin structures in your model and if they require strength consider making them thick enough that there is room for some infill material between them.  Conversely, if they don't need the extra strength consider making them thinner to match the shell thickness which will prevent wasting time and material doing small amounts of infill where it's unnecessary.
 
@@ -63,16 +56,17 @@ Once you've addressed any of the above issues with the model it's time to slice 
 Gcode is an old and simple programming language used for all sorts of machines.  It derives from the earliest programmable machines (weaving looms) and is used extensively throughout the manufacturing industry.  You don't need to know how to read or write gcode to use a 3D printer, but knowing a little can come in handy.
 
 ####Common Gcodes
-Code	Action
-G1	Moves the tool head (in our case, the extruder) to the specified coordinate (x,y,z)
-G28	Home all axis
-M104	Set hot-end temperature
-M84	Disable motors
-M106	Set fan speed
+|Code |Action
+|-----|-----------------------------------------------------------------------------------
+|G1   |Moves the tool head (in our case, the extruder) to the specified coordinate (x,y,z)
+|G28  |Home all axis
+|M104 |Set hot-end temperature
+|M84  |Disable motors
+|M106 |Set fan speed
 
 Not that not all codes mean the same thing on all printers (especially the “M” codes).  Exactly what happens when the printer receives a Gcode is up to the printer's firmware.  The examples above are for the Marlin firmware which is popular on Reprap printers, but other printers may treat these commands differently.  A complete reference of standard Gcodes can be found here:
 
-http://en.wikipedia.org/wiki/Gcode
+* http://en.wikipedia.org/wiki/Gcode
 
 ###Slicing Software
 At the time this book went to press there are a number of open-source software packages capable of slicing a model in STL format into Gcode.
@@ -90,6 +84,8 @@ This is how thin the layers of your model will be sliced (printer manufacturers 
 
 The lower the layer height, the smoother the print will be, to a limit.  There is a point where reducing the layer height will stop improving the print and typically this results in detail being lost or other irregularities.  Exactly what this limit is varies from printer to printer, although most well-calibrated RepRaps are capable of at least 0.01mm.
 
+![Layers are most visible on curves or angles, the layer height of this print can be seen clearly in this photo](images/chapter_4/04_deposition.jpg)
+
 So why would anyone print above the minimum layer height?  The primary reason is time.  The lower the layer height, the higher the number of layers and the longer the model will take to print.  If a model takes an hour and a half to print at .25mm layer height, it will take two to two and a half hours at 0.1mm.  Take it down to 0.01mm (100 micron) and you're looking at 15 hours!.  Time is important because it's rare that the first time you print something will be the last, and especially in the case of new designs (as opposed to tested models downloaded from Thingiverse, etc.), multiple “iterations” of design-slice-print are necessary to get things just right.  In these cases, shortening print times can make a big difference.
 
 The other issue with long prints is that the chance of equipment failure increases with print time, so the chances of loosing the print go up as printing time goes up, and I don't have to tell you how fun it is to have a 15 hour print go wrong at hour 14...
@@ -98,16 +94,15 @@ Personally, I use 0.1mm layer height on my RepRap Mendel by default, and go up t
 
 ###Shells (vertical & horizontal)
 By default, 2 or three shells is a good place to start.  The interaction between shells, infill and model design is discussed in detail above, but in general two shells is adequate for models that will use some amount of infill, and three shells should be used for models that will rely on the shell alone for structure.
-Infill
+
+###Infill
 Infill is discussed in terms of density (in percent) and pattern.  The stronger the model needs to be, the more infill you should use.  Models printed in ABS or PLA plastic are surprisingly strong and fill percentages above 20% are rarely necessary.  The downside to higher fill rates is that it takes more filament to print the model, and it can also increase print times significantly.
 
 Infill pattern is an interesting topic.  When I started building my first RepRap the most common fill pattern was “rectilinear” (i.e. criss-cross), however lately the honeycomb pattern has become a popular default.  The pros and cons of various patterns is certainly a rich area of discussion and debate and one pattern may be superior to another depending on the application.
 
 The one agreed upon fact about infill is that the more complex it is, the longer it takes.  Honeycomb infill takes about twice as long as rectilinear, and other designs are even slower.  Here again you'll need to consider the value of the pattern in relation to the print time and make a choice on a case-by-case basis.  Personally, I now use honeycomb by default and I use rectilinear for solid layers (top and bottom).
 
-INSERT 3dprintingwithreprap04_09.jpg
-
-Here you can clearly see the vertical shells of the model (around the outside), the honeycomb fill and the beginnings of a horizontal shell (seen here covering half of the top surface).
+![Here you can clearly see the vertical shells of the model (around the outside), the honeycomb fill and the beginnings of a horizontal shell (seen here covering half of the top surface)](images/chapter_4/3dprintingwithreprap04_09.jpg)
 
 ###Speed
 This is the speed at which the printer moves the print head around the build surface.  Of course we like the printer to run as fast as it (safely) can, and this will vary greatly from machine to machine.
@@ -117,9 +112,13 @@ In addition to limits of the machine, some designs will come out better if print
 ###Skirt & Brim
 Skirt is a bit of material laid down before the printer starts working on the actual model in order to make sure plastic is flowing well and that any “gunk” left over from previous prints is expelled before working on printing the model itself.  This is usually specified in distance from the model and the number of “loops”.
 
+![The skirt is the incomplete square of white plastic surrounding this in-progress print](images/chapter_4/04_skirt.jpg)
+
 The only thing really to consider here is how much extra room there is on on the print bed outside of the model and to make sure that the skirt isn't going to go beyond what the printer can handle.  Typically one loop is enough, but for very small models it might be worth doing two just to make sure everything is flowing well before laying down material for the actual print
 
 Brim is a technique used to combat curling of the first layer of the print.  The brim is a throw-away layer of plastic that is printed around the outside of the actual model (similar to a skirt, but attached).  This can sometimes help the print “hold on” to the bed and prevent the base of the model from curling or even coming completely loose from the bed.  It's also useful when printing models that don't have a lot of contact with the bed (imagine a model of the Eiffel Tower with just four small feet).
+
+![This small vase was printed with a brim which you can see attached and encircling its base](images/chapter_4/04_brim.jpg)
 
 ###Support Material
 Support material is extra plastic that is added by the slicer to support parts of the model that would otherwise be unprintable due to excessive overhangs or parts that are simply floating in mid air.  On a single-material printer, support material must be cut-away after the print is done, so it's best to avoid it if possible.
@@ -134,7 +133,7 @@ In general if there are settings in your slicing software that are not described
 ##Let's slice it already!
 Once all the settings are in order it's time to generate some gcode!  Load your model up in the slicing program (some have a “platter” where you can add multiple models to process together, others have a simple File->Open interface) and start the slicing process.
 
-INSERT 3dprintingwithreprap04_10.png
+![Slic3r's preview "platter" loaded and ready to slice](images/chapter_4/3dprintingwithreprap04_10.png}
 
 Slicing can take awhile, the software is working very hard to find the best combination of printer moves to translate the shape of your model into lines of plastic on the print bed.  Writing slicing software is a black art, bordering on alchemy so be patient and grab a beverage while your software does the work for you.
 
