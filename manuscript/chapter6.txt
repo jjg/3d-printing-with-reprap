@@ -1,7 +1,8 @@
 # Chapter 6: Improving
 
-Introduction
-Some things can be taught or learned from a book, other things can only be learned by experience.  3D printing is both of these things.  I hope you've learned a thing or two from reading this book so far, and I really hope you've had a chance to try some of these things out for yourself as well.  
+##Introduction
+
+Some things can be taught or learned from a book, other things can only be learned by experience.  3D printing is both of these things.  I hope you've learned a thing or two from reading this book so far, and I really hope you've had a chance to try some of these things out for yourself as well.
 
 3d printing is also new (at least for most people) and so most of the knowledge is still making its way out into the world in published form.  That's not to say that there isn't a lot of information available, but it hasn't evolved into the sort of canonical textbook form you might pick up and read to know everything about it.
 
@@ -9,7 +10,8 @@ So reading a book like this, or a website like reprap.org or even buying a nice 
 
 This section of the book includes a number of ways you can cultivate your 3D printing skills.  These are things that have worked for me over the years and I offer them as a starting point.  Some of these may not work for you, and there certainly are other methods not covered here so if something doesn't work try another.  If you've made it this far in this book you're clearly interested in the subject, so if nothing else find ways to push through the frustration or disappointment that comes with learning to do something new, especially something where so much of the territory is yet to be discovered.
 
-Keep a journal
+##Keep a journal
+
 As you've probably come to realize by now, while the field of 3D printing is moving fast the process moves slow.  This means that the cycle of performance-feedback-revision is measured in hours or days, and it's easy to loose track of exactly what you've been doing, especially if you're spreading the work out over weeks or months or years.  Keeping a journal of your work reduces the chances of making the same mistake twice, and over time allows you to see patterns that span time-frames we humans are less equipped to hold in our heads.
 
 A journal doesn't have to take a specific format, it can be a traditional journal with an entry for each work session, or a blog, a series of videos or just a directory of timestamped photographs but what it key is that the entries capture what changes you've made and what the outcome of those changes are.  Capturing the chronology is key because it's easy to forget what order things were in when you captured the information, especially a year later.  Images are very helpful because a lot of the problems you encounter working with 3D printing are hard to describe in words, or if there are words for specific phenomenon you might not know what they are, so having a photo or video you can share with others can help identify known problems that would otherwise be obscured through language.  A electronic journal capable of capturing textual information as well has the advantage of being searchable, which can be helpful when a problem recurs that you know you've solved in the past.  The most important thing is that maintaining the journal is easy enough that you do it consistently.
@@ -21,7 +23,8 @@ What I took away from this is the value of having a time-line of my work on this
 
 
 
-Study other's work
+##Study other's work
+
 One of the greatest things about the rise of desktop 3D printing is that almost all of it has happened on-line.  This means that almost everyone contributing to the development and improvement of these machines has at one point or another shared their work and thus there is a vast and accessible body of work in this field that can be studied to improve your own skills and creations.
 
 With the wider availability of off-the-shelf printers most peoples first experience with 3D printing will be printing something designed by someone else.  This is a great way to see how items designed for 3D printing are put together, and we've discussed some of these processes and concerns earlier in this book.  What's less obvious is how studying how other people have solved problems can be applied to your own designs, and this is of particular importance to people who are designing parts of an engineering nature as many engineering problems have solutions that go far back before the history of 3D printing.
@@ -34,20 +37,22 @@ Aside from the use as reference material to solve problems in existing designs, 
 
 In fact, the availability of 3D printing has caused something of a resurgence in mechanical design, and some of the purely-mechanical devices and machines that have gone by the wayside over the last century are enjoying a comeback now that it is possible to produce the parts used by these machines with access to a full machine shop (and the associated skills and materials necessary to use one).
 
-Know your printer
+##Know your printer
+
 Looking at it from the perspective of a designer, the capabilities you expect from the 3D printer that will render your work seem straightforward; a combination of maximum length, width, height; perhaps a limited set of materials, etc. but in reality each printer is different, especially when it comes to Reprap printers that are built as one-of-a-kind, and being familiar with the strengths and weaknesses of the printer you'll be using can inform your design choices in a way that maximize the quality which the hardware is capable of.
 
 Here's a simple example: A Mendel-style Reprap printer moves the bed back and forth along the Y axis.  This applies lateral force to the model as it is printed, which means that while the Mendel may be capable of printing objects 200mm tall, tall thin models are more likely to loose adhesion to the bed on this style of printer verses say an Ultimaker which moves the bed in the Z axis.
 
 There are many subtle ways in which a printer's capability can vary and often these are not obvious from the basic specifications.  The best way to learn about what the printer does best (and worst) is to print some models and observe carefully.  This is an area where a journal with photographs comes in handy, because over time you'll start to notice patterns in the errors that occur in your output over time, as well as what is in common between prints that turn out particularly well.
 
-<photo sequence showing an error that became more apparent over a series of prints spaced out over a period of time>
+INSERT photo sequence showing an error that became more apparent over a series of prints spaced out over a period of time
 
 As you learn more about a particular printer you can adjust your designs to work within this “envelope” and the result will be a higher percentage of successful prints, along with an overall improvement in average quality.  If you have access to more than one printer you can start building up this information in terms of what printer is most suitable for a particular project, and you'll even start to get an instinct about this when discussing new designs and ideas with others.
 
 You can then use this knowledge to understand “why” each printer exhibits these traits, and you'll gain the ability to predict how a printer will perform at certain tasks by examining the design choices made by the machines engineers.  This is very helpful when considering a new printer (for yourself or others) as well as knowing how you might address these problems yourself as described in the next section.
 
-Modify your printer
+##Modify your printer
+
 The original goal of the Reprap project was to create a machine capable of creating copies of itself.  While we've yet to see a Reprap that is 100% capable of this, most designs are able to produce the majority of their own parts, which gives them the ability to produce better parts as well.
 
 The beauty of the open-nature of the Reprap project is that it leverages the minds of hackers around the world to continually produce improvements, and as the machines are capable of printing their own parts.  Until now if you had a machine and a better part was made for it you had to have it shipped to you physically whereas with the Reprap an improved part can be delivered to you across the Internet almost instantaneously, with almost no cost in terms of time, fuel or labor and can be produced locally by the very machine that the part will be used in.  This means that improvements spread quickly, almost as quickly as improvements in software, which is only possible due to the open-source nature of the Reprap hardware.
@@ -72,14 +77,15 @@ Over time, I was able to further improve the parts I used to eliminate this erro
 
 This might sound complicated or that it requires engineering experience, etc. but it's really just a matter of observing your machine and taking good notes.  Over time you'll observe behaviors of the machine that result in effects in the output that you find desirable or undesirable, and you can use the design skills you've learned already to design parts to enhance or counteract these effects.  If you have a printer based on an open-source design you have a leg-up in this process because you can simply download the printer's parts and start modifying the original designs, but even if you start with a non-open machine nothing stops you from printing parts to modify and improve it (always remember that the first Reprap parts were printed on closed-source commercial machines).
 
-Experiment
+##Experiment
+
 When you have access to a 3D printer it's hard not to let you mind run free with all of the new things you're going to make, but it's important to dedicate some of the machine's time to printing things that are not “committed” to practical use.
 
 One thing to get comfortable with is the idea that you're going to print a lot of things that are not going to turn out perfect the first time.  This might sound obvious, but it can get frustrating, and I've known several people who have lost interest because they are unable to get the results they want from their printer.  If you look at the printer as a production machine I can see how you'd arrive at this place, but I think it's still far to early in the evolution of desktop manufacturing to treat any printer available today this way.
 
-Instead I recommend allocating a percentage of machine time to pure experimentation.  This includes printing parts designed to test the limits of the machine, or the limits of your design capability.  It also includes testing modifications and improvements like the ones described in the previous section.  Whatever you do, consider all output from this experimental time to be fodder for recycling and don't try to produce things that are needed outside of the experimental process itself.  By deliberately allocating time to experiment you remove all consequence (both real and imagined) from producing unusable output, and this is an important thing to do.  If you don't you'll eventually find yourself in a place where no matter what you do you can't get the printer to print well and you'll be ready to give up. 
+Instead I recommend allocating a percentage of machine time to pure experimentation.  This includes printing parts designed to test the limits of the machine, or the limits of your design capability.  It also includes testing modifications and improvements like the ones described in the previous section.  Whatever you do, consider all output from this experimental time to be fodder for recycling and don't try to produce things that are needed outside of the experimental process itself.  By deliberately allocating time to experiment you remove all consequence (both real and imagined) from producing unusable output, and this is an important thing to do.  If you don't you'll eventually find yourself in a place where no matter what you do you can't get the printer to print well and you'll be ready to give up.
 
- I speak from experience here, so don't take this lightly.  Desktop 3D printing is still in the very early stages of development and trying to rush through that will result in compromises that will last a very long time.  Many people compare the 3D printer to the personal computer and I think this is apt, however I disagree with the idea that the current generation printers are at a stage analogous to the Apple II or Commodore 64 era of personal computing.  I believe we are still at the ALTAIR stage (Google it ) which means that the future is best served by getting smart and creative people involved with 3D printing who genuinely love trying new things and learning from failure.  
+ I speak from experience here, so don't take this lightly.  Desktop 3D printing is still in the very early stages of development and trying to rush through that will result in compromises that will last a very long time.  Many people compare the 3D printer to the personal computer and I think this is apt, however I disagree with the idea that the current generation printers are at a stage analogous to the Apple II or Commodore 64 era of personal computing.  I believe we are still at the ALTAIR stage (Google it ) which means that the future is best served by getting smart and creative people involved with 3D printing who genuinely love trying new things and learning from failure.
 
 By trying to make 3D printing “perfect” in its current form we run the risk of finding something better through the natural evolutionary process enjoyed by the Reprap up until this point; in fact as we discussed near the beginning of the book there are many new and interesting Reprap designs that are a complete departure from the original machines, but if you look at what is being offered by many commercial (and especially manufacturers of non-open-source machines) you'll see that the designs are all based on the previous generation of machines.  To continue with the personal computer analogy, this similar to how many computers retain the architecture of the first IBM PC today, and the limitations and constraints that go along with it.
 
