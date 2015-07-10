@@ -14,30 +14,30 @@ Well, not exactly.  Most RepRaps have some some level of “bridging” capabili
 
 ![The arms on this model overhang the bed, but at a safe 45 degree angle](images/chapter_4/04_slicing.png)
 
-![On the other hand, this model is likely to have problems as the arms are at a 90 degree angle from the body](images/chapter_4/bed_bad.png)
+![On the other hand, this model is likely to have problems as the arms are at a 90 degree angle from the body](images/chapter_4/04_bed_bad.png)
 
 Often the problem of overhangs can be addressed simply by rotating the object such that the larger parts are at the bottom of the print, resting safely on the print bed.
 
-![The same model above that would not print well can be printed safely by simply rotating the model to lie flat on the bed](images/chapter_4/good_bed.png)
+![The same model above that would not print well can be printed safely by simply rotating the model to lie flat on the bed](images/chapter_4/04_good_bed.png)
 
 That said, sometimes these problems will just “solve” themselves.  On more than one occasion I've overlooked an obvious overhang problem with a design but sent it to the printer only to return and find that the model printed acceptably.  When in doubt, try printing and see what happens!
 
-In one case I printed a little house model and stupidly placed it on the bed with a closed wall facing up.  Not only did this create a 90 degree overhang, but the wall had windows and a door cut into it, so no amount of “bridging” capability would have saved me here.
 
-INSERT SIDEBAR
+A> In one case I printed a little house model and stupidly placed it on the bed with a closed wall facing up.  Not only did this create a 90 degree overhang, but the wall had windows and a door cut into it, so no amount of “bridging” capability would have saved me here.
+A>
+A> ![](images/chapter_4/3dprintingwithreprap04_03.jpg)
+A>
+A> However, through no small amount of luck the printer was able to build-up a number of layers behind this wall, which turned out terrible, but eventually it had deposited enough material that the final outside of the wall turned out pretty good.  Since the inside of the house wouldn't be visible in the application it was designed for, the mess created to complete the model was inconsequential.
+A>
+A> ![](images/chapter_4/3dprintingwithreprap04_04.jpg)
 
-INSERT 3dprintingwithreprap04_03.jpg
-
-However, through no small amount of luck the printer was able to build-up a number of layers behind this wall, which turned out terrible, but eventually it had deposited enough material that the final outside of the wall turned out pretty good.  Since the inside of the house wouldn't be visible in the application it was designed for, the mess created to complete the model was inconsequential.
-
-INSERT 3dprintingwithreprap04_04.jpg
 
 ###Shells, infill & wall thickness
 This is an issue that can arise based on the interplay between the model, the printer's capabilities and the slicing settings used.
 
 Objects printed by a deposition-style printer are usually constructed from a combination of two types of print objects called “shells” and “infill”.  Shells are solid walls of plastic laid-down in an outline of the models' shape.  An easy way to imagine this is to imagine printing a ring; first the printer lays down a circle of plastic for the outside of the ring, then it lays down a circle of plastic for the inside of the ring and finally the space between these two “shells” is “infilled” with plastic.
 
-![Here you can see the shell of the print laid down, and the infill being applied](images/chapter_4/shell_and_fill.jpg)
+![Here you can see the shell of the print laid down, and the infill being applied](images/chapter_4/04_shell_and_fill.jpg)
 
 The trick is that there are minimum sizes for the width of these types of output.  The minimum width of a shell is limited to the size of the printer's nozzle, and while technically minimum infill size is limited by the same, practically speaking infill that is thinner than three shell widths is impractical (in these cases is usually makes more sense to use multiple shells).
 
@@ -56,13 +56,14 @@ Once you've addressed any of the above issues with the model it's time to slice 
 Gcode is an old and simple programming language used for all sorts of machines.  It derives from the earliest programmable machines (weaving looms) and is used extensively throughout the manufacturing industry.  You don't need to know how to read or write gcode to use a 3D printer, but knowing a little can come in handy.
 
 ####Common Gcodes
-|Code |Action
-|-----|-----------------------------------------------------------------------------------
-|G1   |Moves the tool head (in our case, the extruder) to the specified coordinate (x,y,z)
-|G28  |Home all axis
-|M104 |Set hot-end temperature
-|M84  |Disable motors
-|M106 |Set fan speed
+
+| Code | Action
+|------|------------------------------------------------------------------------------------
+| G1   | Moves the tool head (in our case, the extruder) to the specified coordinate (x,y,z)
+| G28  | Home all axis
+| M104 | Set hot-end temperature
+| M84  | Disable motors
+| M106 | Set fan speed
 
 Not that not all codes mean the same thing on all printers (especially the “M” codes).  Exactly what happens when the printer receives a Gcode is up to the printer's firmware.  The examples above are for the Marlin firmware which is popular on Reprap printers, but other printers may treat these commands differently.  A complete reference of standard Gcodes can be found here:
 
@@ -133,7 +134,7 @@ In general if there are settings in your slicing software that are not described
 ##Let's slice it already!
 Once all the settings are in order it's time to generate some gcode!  Load your model up in the slicing program (some have a “platter” where you can add multiple models to process together, others have a simple File->Open interface) and start the slicing process.
 
-![Slic3r's preview "platter" loaded and ready to slice](images/chapter_4/3dprintingwithreprap04_10.png}
+![Slic3r's preview "platter" loaded and ready to slice](images/chapter_4/3dprintingwithreprap04_10.png)
 
 Slicing can take awhile, the software is working very hard to find the best combination of printer moves to translate the shape of your model into lines of plastic on the print bed.  Writing slicing software is a black art, bordering on alchemy so be patient and grab a beverage while your software does the work for you.
 

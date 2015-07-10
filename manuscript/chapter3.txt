@@ -172,7 +172,7 @@ Right now, your little house is a solid block of stuff, which is hard to live in
 5. Use the black cone to raise the new Box so that it's 2 mm above the workplane (the floor of the house) to create a floor.
 6. Finally, with the new box still selected, shift-click the outside of the original Box and click the Group button on the top-right of the screen. This will combine the original solid box with the Hole box and carve out the inside of your house as shown below.
 
-![By grouping the two boxes, the inside of the house is made hollow](images/chapter_3/tinkercad_house_hold_grouped.png)
+![By grouping the two boxes, the inside of the house is made hollow](images/chapter_3/tinkercad_house_hole_grouped.png)
 
 Now can drag the roof back on. Since we haven't added any external openings, the house should look as it did above but it's now hollow inside.
 
