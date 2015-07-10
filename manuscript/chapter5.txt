@@ -71,36 +71,31 @@ At the moment the go-to service for most desktop manufacturers is Shapeways.  Sh
 
 If you have a model that can be printed on a desktop-grade printer then sending the job out to Shapeways is a pretty straightforward process.  The first step is setting up an account at http://www.shapeways.com:
 
-
+![](images/chapter_5/shapeways_signup.png)
 
 Next upload the desired STL file.  Shapeways runs some tests on the file and if everything looks OK you get a nice summary and an on-screen render of the part.
 
-
+![](images/chapter_5/shapeways_upload2.png)
 
 An array of print materials is displayed below, and as you can see Shapeways can print in a lot of materials not commonly available on the desktop (yet).  Prices range from a few dollars to thousands depending on the material (platinum drain guard anyone?).
 
 You'll note that some materials may have a yellow exclamation mark next to them.  This is an alert that Shapeways found something about the model that might not be printable in the selected material.
 
-
+![](images/chapter_5/shapeways_material_warning.png)
 
 In some cases this can be fixed right on the website.  For example, if I want to print my drain guard in ceramic, the walls are too thin as-is, but Shapeways provides a way to fix this automatically.
 
+![Before automatic adjustments to allow printing in ceramic](images/chapter_5/shapeways_before.png)
 
+![After automatic adjustments](images/chapter_5/shapeways_after.png)
 
+Unfortunately in this case, the changes to the part could make it unusable (probably won't fit my drain anymore), so in that case I'll have to fix it myself and re-upload it).  Instead I'll choose Stainless Steel since there's no issues with the model in that material.
 
-
-
-
-
-
-
-	Unfortunately in this case, the changes to the part could make it unusable (probably won't fit my drain anymore), so in that case I'll have to fix it myself and re-upload it).  Instead I'll choose Stainless Steel since there's no issues with the model in that material.
-
-
+![](images/chapter_5/shapeways_stainless.png)
 
 The material is selected by clicking “add to cart” and a little summary window appears.  Next comes the typical e-commerce purchase process of providing shipping and billing information, and finally a status page is displayed.
 
-
+![](images/chapter_5/shapeways_order_status.png)
 
 As time passes this status is updated and if all goes well, the part shows up on your doorstep!
 
