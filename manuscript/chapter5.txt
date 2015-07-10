@@ -10,7 +10,7 @@ If you purchased a printer or printer as a kit, the company you bought it from l
 
 ###Printrun/Pronterface
 
-INSERT screenshot of pronterface
+![The Printrun/Pronterface interface](images/chapter_5/pronterface.png)
 
 Pronterface is one of the most tried-and-true options for controlling your printer, and many host software packages inherit either literally or conceptually from Printrun's open-source codebase.  Pronterface provides a graphical interface for controlling the printer directly, making it easy to position the print head, set and monitor hot end and heated bed temperatures and extrude filament.
 
@@ -31,7 +31,7 @@ Cura is also open-source software and can be obtained from the Ultimaker website
 ###Octoprint
 Octoprint is unique among the other host software here in that it's not limited to being used on the computer that it is installed on.  Instead, Octoprint creates a website (or web application if you prefer) that displays the printer controls and allows you to interact with the host software using any device with a web browser on the same network as the host computer.
 
-INSERT screenshot of octoprint
+![Octoprint interface runs in any modern web browser](images/chapter_5/octoprint.png)
 
 As mentioned earlier this allows the host computer to be embedded into the printer itslef and requires no keyboard or monitor to be attached.  This is particularly useful when the printer is moved from place-to-place, reducing the amount of equipment that needs to be hauled around (Octoprint works great even on smartphone-sized screens!).
 
@@ -39,7 +39,7 @@ This also makes it easy to monitor the progress of a print remotely (which comes
 
 Octoprint also provides an API which makes it easy to interface it with other pieces of software.  One example is an app for the Pebble smartwatch that allows you to monitor a print job right on your wrist!
 
-INSERT image of octowatch
+![You can control Octoprint from almost anywhere, including your wrist](images/chapter_5/octowatch.JPG)
 
 Octoprint is also open-source software which can be downloaded from http://octoprint.org.  There's also a custom Raspberry Pi SD Card image that can be used to create a pre-configured Octoprint host by simply downloading the image, copying it to an SD card and inserting it into a Raspberry Pi board.
 
@@ -104,7 +104,7 @@ The material is selected by clicking “add to cart” and a little summary wind
 
 As time passes this status is updated and if all goes well, the part shows up on your doorstep!
 
-INSERT photo of PLA & stainless drain guard
+![On the left is the draingard printed by Shapeways in "Stainless Steel"; on the right is the same model printed at home in PLA](images/chapter_5/chapter-5-shapeways.JPG)
 
 There's also a number of up-and-coming services based on routing print jobs to a network of Reprap operators.  This is an exciting approach to solving the problem that really leverages the power of desktop manufacturing.  Not only can you use these services to get your design printed, once you have a printer of your own you can join these networks and recover some of your investment by leasing time on your machine to other up-and-coming 3D designers.  If this approach interests you I encourage you to visit the links below as well as search around as there will undoubtedly be more networks like these by the time you read this:
 
@@ -119,7 +119,7 @@ If you printed your model yourself then it's likely you'll have some clean-up wo
 
 The first thing you'll want to do is remove any material that is not part of the model but was added to aid the printing process.  This can include skirt or raft material added to the bottom of the print to improve adhesion to the bed during the printing process or support material needed for parts with extreme overhang.
 
-
+![The skirt seen around the bottom of this pot can easily be removed by hand, or with the help of a hobby knife](images/chapter_5/skirt2.JPG)
 
 This material is designed to be removed and can often be peeled or broken away by hand.  Sometimes it's more stubborn, or located in an area of the part that's hard to reach with fingers.  In these cases a pair of needle-nose pliers can do the trick.  In other cases it's necessary to cut or file away the material, but care must be taken to avoid cutting into parts of the model that you want to keep (as well as parts of your body you want to keep).
 
@@ -127,7 +127,7 @@ When filing or sanding care must be taken to avoid generating too much heat and 
 
 Another tool that is very helpful in cleaning up prints is a step drill bit.  Printed parts with holes can sometimes come out slightly out-of-round, or slightly the wrong size due to changes in the plastic as it is laid down, as well as other printing defects that can make holes not quite right.
 
-
+![Extra material is easily and uniformally removed from holes using a step drill bit](images/chapter_5/stepdrill.jpg)
 
 A step drill bit can make short work of these errors and can ensure that the resulting holes are precise in size and shape.  It's not necessary (or recommended if it can be avoided) to use the bit in a drill as the hardness and sharpness of the bit can easily overwhelm most printed materials and power drilling can cause heat to build up fast which can melt the plastic instead of cutting it.  That said a power drill can be used if done so carefully, and with an awareness of what can happen if things get too hot.
 
@@ -135,7 +135,7 @@ Step drill bits can be expensive but for this application a cheap one will do.  
 
 Finally there is one more technique I'll mention that can remove almost all evidence that a model was 3D printed; Acetone smoothing.
 
-
+![Acetone smoothing produces amazing results, but it must be used with care](images/chapter_5/acetone_before_after.jpg)
 
 First off be aware that Acetone is a dangerous chemical, and using it to melt plastic can produce dangerous fumes.  It is also extremely flammable and using it in an enclosed space can be very dangerous for these reasons.  Personally I don't use this technique because of these risks and also because I don't use ABS plastic (this technique doesn't work for PLA), but I include it here because done carefully and correctly it can produce stunning results for parts where dimensional accuracy is not important.
 
@@ -145,8 +145,8 @@ Remember what I said about flammable?
 
 As I said above I don't have any personal experience with this technique, but if it interests you (or you'd just like t know more about it) I encourage you to visit the websites linked below for more information:
 
-http://blog.reprap.org/2013/02/vapor-treating-abs-rp-parts.html
-http://sinkhacks.com/building-acetone-vapor-bath-smoothing-3d-printed-parts/
+* http://blog.reprap.org/2013/02/vapor-treating-abs-rp-parts.html
+* http://sinkhacks.com/building-acetone-vapor-bath-smoothing-3d-printed-parts/
 
 
 ## Exercise: The $5 3D Printer
@@ -156,18 +156,18 @@ You'll need a few supplies for this exercise:
 * A piece of graph paper
 * A hot glue gun
 
-
+![](images/chapter_5/5dp_supplies.JPG)
 
 I also recommend using a photocopy of the Gcode below so you can cross-off each line as it is completed, but this isn't required.
 
 ###Step 1: Prepare the build platform
 You'll need some graph paper, and the lines on the graph will need to be numbered.  You can either do this by hand to an existing piece of graph paper or you can download a PDF of a pre-numbered graph you can then print (using a 2D printer) here:
 
-http://www.printablepaper.net
+* http://www.printablepaper.net
 
 Once you have the numbered graph paper you'll want to affix it to something that won't move around too much and isn't extremely heat-sensitive.  This could simply be taping it to the table or to a piece of cardboard if you want to move it around before you're done.
 
-
+![](images/chapter_5/5dp_graph_paper.JPG)
 
 ###Step 2: Select a model
 In the $5 3D printer, you are the firmware!  You'll be reading the model's Gcode directly, so I recommend starting with the simple model below.  You can read this from a screen, but as mentioned above I recommend printing it out so you can cross off each line as you finish with it and also so you don't loose track of where you're at when the screen you're reading from decides to go to sleep.
@@ -181,14 +181,13 @@ In the $5 3D printer, your arm is the X, Y and Z axis!  Position yourself relati
 ###Step 5: Print!
 Fire up the hot glue gun and get it to temperature.  Once it's ready begin processing the Gcode by reading the first instruction and then carrying out that action using the hot glue gun and the grid of the graph paper as a guide (it may be easier to mark the start and end points for each line with a pen before laying down the glue).
 
-
+![](images/chapter_5/5dp_first_line.JPG)
 
 I have included a table of basic Gcodes and a description of what movements you'll need to make to complete them.  Once you've executed one line mark it complete and then move on to the next one.
 
-Code
-Example
-Description
-X, Y, Z
+| Code | Example | Description
+|------|---------|-------------
+| X, Y, Z |
 
 Coordinates along the X, Y and Z axis.
 E
@@ -213,6 +212,8 @@ Controlled Move: move from the current position to the specified coordinates.  I
 
 Now that you know how to read the code, let's get started!  Here's a few lines from the beginning of a simple Gcode file:
 
+{line-numbers=off}
+~~~~~~~
 G0 F6000 X6.13 Y32.47
 ;TYPE:WALL-OUTER
 G1 F900 X38.47 Y32.47 E240.02457
@@ -267,19 +268,19 @@ G1 X52.46 Y34.32 E459.22919
 G1 X52.10 Y34.77 E459.70577
 G1 X52.57 Y36.85 E461.48307
 G0 F6000 X46.27 Y33.54
-
+~~~~~~~
 
 This completes the outline of the first layer.  The next section of the file would normally provide the Gcode instructions to fill in the shape (even though this Gcode was generated with zero infill, the top and bottom layers are solid by default).  In the case of this example model, each consecutive layer is the same as the one below it, so the infill instructions have been left out (as you can imagine, there are a lot of lines of Gcode that make up each line of the infill pattern).  To create the infill for the sample model, simply fill in the outline you created using the Gcode above using diagonal lines of glue one after another laid down close enough to each-other to touch.
 
- 
+![](images/chapter_5/5dp_outline.JPG)
 
 After completing the fill you'd normally receive a Gcode instruction to move the Z axis up one layer; since we don't have a way to precisely measure the Z dimension, use the thickness of the glue you've already laid down as a guide for how far up to move the nozzle of the glue gun each time the Z axis changes (for the sample model you'll be laying the next layer directly on top of the previous one so this should be easier to do than it sounds).
 
-
+![](images/chapter_5/5dp_infill.JPG)
 
 Repeat this process 10 times (10 layers of approximately 1mm layer height = 10mm tall) to complete the sample model.  Eventually you'll reach the end of the code (or your patience) and you should have some approximation of the model as it was designed.  Peel this off your graph paper and the print job is complete!
 
-
+![](images/chapter_5/5dp_finished_print.JPG)
 
 Even if you're not impressed with the output of the $5 3D Printer, you should have a very clear understanding now of exactly how the printer turns electronic codes into a physical object (along with a new level of appreciation for robots).  This exercise also makes it a lot more clear why certain types of model designs a challenging for Cartesian-style printers to print.
 
