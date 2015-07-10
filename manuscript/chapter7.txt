@@ -4,19 +4,22 @@ More than any other thing, sharing has been the single most important thing in t
 
 The good news is that there's so many ways to share your 3d printing work that chances are you'll find a couple that are easy and fun, in fact you're probably doing them already.
 
-Share your work online
+##Share your work online
+
 You probably already use some form of social networking (Twitter, Facebook, Google+, etc.).  If so, sharing your work is as easy as posting an update describing what you're working on or a photo of your last model, print, etc.  There's also places online that specialize in 3d printing where you can share your models, discuss printers and get help improving your knowledge and experience.
 
 But let's start with something you probably already know, social networking.
 
-Social Networks
+###Social Networks
+
 Social networks are a great place to share your work and discuss what you're working on.  Posting an update is as easy as writing a few lines about your project and sharing pictures of your models, prints, etc. is usually a one-click operation.  Most social networks also have mobile apps that make documenting and sharing your work using a phone very easy.
 
 The great thing about sharing your 3d printing projects on social networks is that it establishes a timeframe for the work automatically.  This might not seem important now, but as you continue to experiment and learn more, being able to reflect on previous work or reference photos from old prints becomes more and more useful.  In addition to the “hard” value of being able to compare a current print to one from a year ago, there is also a psychological value to being able to see your work improve.
 
 3D printing is new, and it can be hard, and seeing how far you've come can help neutralize feelings of frustration and failure that is the part of any work in emerging technology.  Sharing your success and failures on social networks provides you with a zero-effort timeline of your progress from beginning to journeyman and is so easy it's hard to justify not doing it.
 
-Model Repositories
+###Model Repositories
+
 Model repositories are places where you can share your models and find models created by other designers.  Currently the most well-known of these is Thingiverse.com, created by the Makerbot corporation.  However, in 2013 Makerbot decided to make their products closed-source, and in turn changed the way that projects hosted on Thingiverse were licensed as well as turning Thingiverse into a heavily brand-centric website.  This rubbed a lot of the Reprap community the wrong way, leading to the creation of several alternative websites as well as the development of new ways of sharing and finding 3d models for printing.
 
 Of the Thingiverse website alternatives, the most popular at the moment is Ultimaker's Youmagine.com.  Fortunately it's also one of the easiest to use, so let's walk through setting up an account and posting a new model.
@@ -26,8 +29,8 @@ Click “Register” in the top-right-hand corner of the homepage.  The registra
 
 Before you can upload a design you'll need to gather a few things:
 
-The model file (.stl) you want to share
-Any photos or images you want to accompany the model
+* The model file (.stl) you want to share
+* Any photos or images you want to accompany the model
 
 One you have these files gathered click the blue “+ Add design” button at the top of the page to get started.
 
@@ -72,11 +75,12 @@ In addition to being a model repository, Youmagine has a unique “Ideas” sect
 
 In addition to Youmagine there are a number of up-and-coming model repositories.  By the time you read this the list will undoubtedly change, but here's a few more to check out when looking for models to work with or places to share your work:
 
-https://cubehero.com
-http://www.bld3r.com
-https://thepiratebay.se/browse/605
+* https://cubehero.com
+* http://www.bld3r.com
+* https://thepiratebay.se/browse/605
 
-Non-Model Repositories
+###Non-Model Repositories
+
 Of course 3D models are just computer files, and as such can be stored in any sort of repository, not just ones specifically designed for storing 3D models.  The downside to this is that these stores generally don't make any special provisions for processing or displaying STL files, Code files, etc. but if you already have a system for keeping track of and sharing your electronic work, it might make sense to use these same mechanisms to share you 3d designs.
 
 One non-3d-specific repository that has become a popular way to track and share 3d model files is Github.  Github is a sort of semi-social network built around the Git code versioning system used elsewhere in this book (see Appendix X for a brief introduction).  While Github doesn't provide a lot of functionality that makes it better for sharing 3d models than sites like Youmagine (although there are some), if you're already a regular Github user it might be easier and faster for you to manage and share your models this way.
@@ -86,7 +90,7 @@ Sharing a model on Github is pretty straightforward, but you'll need to make sur
 
 First you'll need a Github account.  Visit http://github.com and fill-out the registration form on the homepage.  Once you've confirmed your account the “Sign in” button on the top-right of the page should change to display your username, and you'll be deposited at a “dashboard” page that looks something like this:
 
-<screenshot of basic user github dashboard>
+INSERT screenshot of basic user github dashboard
 
 Github is aimed at software developers and therefore the user interface can be a bit terse.  At the top-right corner of the page is a “+” sign, click that to create a new “repository” where we'll post our snowman model.
 
@@ -104,7 +108,8 @@ Public/Private
 
 Repositories on Github are public by default, and Github allows users an unlimited number of public repositories.  You can also make your repository private, but since this chapter is on sharing, we're not going to do that.
 
-Initialize this repository with a README
+####Initialize this repository with a README
+
 Since Github is geared toward storing software source code, it expects the code to do the talking.  To this end instead of requiring a long list of fields describing what's stored in the repository, a README file is used to display this information.  By checking this box, Github will create a minimal README file to use as a starting point.
 
 The rest of the fields can be left as-is.  Just like Youmagine, you can select a license to be included in your repository to indicate how you want others to be able to use your model.  For this example we'll just leave that be, but feel free to select a license if you desire.
@@ -168,22 +173,24 @@ Of course, there is a lot more that Github can do and we've only just scratched 
 
 
 
-Share your work in real life
-With all these cool ways to share your work electronically it's easy to forgot about good-old-fashioned show-and-tell, but don't overlook it.  
+##Share your work in real life
+
+With all these cool ways to share your work electronically it's easy to forgot about good-old-fashioned show-and-tell, but don't overlook it.
 
 Sharing your work electronically is convenient for both you and the people you know online, but what about the  people offline?  Most people who frequent online establishments like Twitter and Facebook have heard of 3d printing and probably even know someone working with it, but there's a lot of people who are not as connected as you may be, but might have a lot to add to the conversation about 3d printing and desktop manufacturing.
 
 Much of the technology used in 3d printing isn't new, in fact the Gcode that's used to control Reprap printers goes back to the 1960's and has been used by manufacturing equipment (and the people who program them) for decades.  Additionally, the aspects of Cartesian manufacturing equipment goes back further, and there are large established communities of experts in these fields who are not necissarilly an active part of your online communities.
 
-By sharing your 3d printing work in person, and in public in the real world, you might be surprised to see who takes an interest and who can contribute to your work both as a student and a teacher.  I've been blown away when presenting Reprap topics to various groups and hear new and innovating ideas and applications for 3d printing from the most surprising sources. 
+By sharing your 3d printing work in person, and in public in the real world, you might be surprised to see who takes an interest and who can contribute to your work both as a student and a teacher.  I've been blown away when presenting Reprap topics to various groups and hear new and innovating ideas and applications for 3d printing from the most surprising sources.
 
 It's also often easier to explain 3d printing when you can let someone watch the printer at work and handle a printed part.  In many cases even the most skeptical of the technology have been swayed when watching the machine work and seeing that it actually does work.
 
 
-Contribute to the community
+##Contribute to the community
+
 Adrian Boyer may have started the Reprap project, but it is the community surrounding that event that has made desktop publishing possible.  The continual refinement and improvement (as well as reduced costs) is a direct effect of an active community taking part in the research & development of 3d printing technology, and then turning the outcome of that work over to other community members unencumbered by legal and financial constraints.
 
-If you're new to 3d printing you might wonder what you could add to this community.  To be frank, everything.  
+If you're new to 3d printing you might wonder what you could add to this community.  To be frank, everything.
 
 First off, by choosing to build, buy or otherwise acquire a Reprap printer, you're supporting the companies, communities and individuals who have contributed to the project since its inception.  By sharing your projects and progress as we've discussed above, you're raising awareness of the project and inspiring others to take the plunge into 3d printing.  You're also helping spread the word that there is an alternative to accepting what the private, closed-source printer companies have to offer (remember that 3d printing has been around for decades, and it was only after the open-source Reprap project that these tools became available to anyone outside of higher education and corporate R&D departments).
 
