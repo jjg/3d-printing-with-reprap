@@ -75,7 +75,7 @@ If you have a model that can be printed on a desktop-grade printer then sending 
 
 Next upload the desired STL file.  Shapeways runs some tests on the file and if everything looks OK you get a nice summary and an on-screen render of the part.
 
-![](images/chapter_5/shapeways_upload2.png)
+![](images/chapter_5/shapeways_upload_2.png)
 
 An array of print materials is displayed below, and as you can see Shapeways can print in a lot of materials not commonly available on the desktop (yet).  Prices range from a few dollars to thousands depending on the material (platinum drain guard anyone?).
 
