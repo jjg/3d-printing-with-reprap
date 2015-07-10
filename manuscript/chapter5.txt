@@ -213,7 +213,7 @@ Controlled Move: move from the current position to the specified coordinates.  I
 Now that you know how to read the code, let's get started!  Here's a few lines from the beginning of a simple Gcode file:
 
 {line-numbers=off}
-~~~~~~~
+~~~~~~~~
 G0 F6000 X6.13 Y32.47
 ;TYPE:WALL-OUTER
 G1 F900 X38.47 Y32.47 E240.02457
@@ -268,7 +268,7 @@ G1 X52.46 Y34.32 E459.22919
 G1 X52.10 Y34.77 E459.70577
 G1 X52.57 Y36.85 E461.48307
 G0 F6000 X46.27 Y33.54
-~~~~~~~
+~~~~~~~~
 
 This completes the outline of the first layer.  The next section of the file would normally provide the Gcode instructions to fill in the shape (even though this Gcode was generated with zero infill, the top and bottom layers are solid by default).  In the case of this example model, each consecutive layer is the same as the one below it, so the infill instructions have been left out (as you can imagine, there are a lot of lines of Gcode that make up each line of the infill pattern).  To create the infill for the sample model, simply fill in the outline you created using the Gcode above using diagonal lines of glue one after another laid down close enough to each-other to touch.
 
