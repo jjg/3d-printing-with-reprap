@@ -3,8 +3,9 @@
 ##Introduction
 
 Uncategorized list of project ideas
+
 * Print your genome
-* Print a replacement part 
+* Print a replacement part
 * Mathematical vase
 * Your home
 *
