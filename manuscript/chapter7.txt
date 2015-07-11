@@ -14,6 +14,8 @@ But let's start with something you probably already know, social networking.
 
 Social networks are a great place to share your work and discuss what you're working on.  Posting an update is as easy as writing a few lines about your project and sharing pictures of your models, prints, etc. is usually a one-click operation.  Most social networks also have mobile apps that make documenting and sharing your work using a phone very easy.
 
+INSERT image of sharing prints on social network
+
 The great thing about sharing your 3d printing projects on social networks is that it establishes a timeframe for the work automatically.  This might not seem important now, but as you continue to experiment and learn more, being able to reflect on previous work or reference photos from old prints becomes more and more useful.  In addition to the “hard” value of being able to compare a current print to one from a year ago, there is also a psychological value to being able to see your work improve.
 
 3D printing is new, and it can be hard, and seeing how far you've come can help neutralize feelings of frustration and failure that is the part of any work in emerging technology.  Sharing your success and failures on social networks provides you with a zero-effort timeline of your progress from beginning to journeyman and is so easy it's hard to justify not doing it.
