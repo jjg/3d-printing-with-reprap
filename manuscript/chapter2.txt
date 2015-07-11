@@ -10,7 +10,7 @@ By combining microprocessor control to the stereolithography process, Hull was a
 ##Industrial Use
 Early industrial (non-experimental) applications for 3D printing focused primarily in the area of research and design.  These machines ushered in the era of “rapid prototyping”, allowing designers and engineers to produce physical models of designs in hours instead of weeks, without the aid of skilled craftspeople and machinists.
 
-INSERT image of early commercial 3d printer<
+INSERT image of early commercial 3d printer
 
 These early machines cost tens or hundreds of thousands of dollars to acquire and thousands of dollars annually to operate.  They used proprietary materials that were available only from the original equipment manufacturer (OEM) and often required maintenance contracts that ensured ongoing cost to operate (and revenue for the OEM).  This arrangement is very similar to how early computer systems were used, before the advent personal computer.
 
@@ -19,7 +19,7 @@ Through the 1990's, rapid prototyping changed the way that product research and 
 ##The RepRap Project
 In 2005, Dr. Adrian Bowyer began The RepRap Project with the goal of creating a 3d printer that was capable of printing copies of itself.  Dr. Bowyer had experienced the awesome power of 3d printing at the University of Bath, and realized the potential for these machines if they were made available outside of the University laboratory or corporate R&D department, but up until this point 3d printers were so expensive to purchase and operate that only the largest companies and university’s could afford them.
 
-
+INSERT reprap blog first post image
 
 By designing the machine to self-replicate, the cost of each generation goes down as the quality of the output of each generation goes up.
 
@@ -29,7 +29,7 @@ By providing the RepRap designs as Open Source, and carrying-out the development
 
 Today there are numerous descendants from the original RepRap Darwin design, some are simply improvements on the original design, others have evolved into specialized machines that focus on producing parts with particular qualities but all can be related directly back to the original printer designed for the RepRap Project, and in fact most “consumer grade” 3d printers, whether they are RepRaps or not, are descended from this original design.
 
-
+INSERT reprap family tree image
 
 ##Desktop Manufacturing
 With the introduction of the Reprap came the possibility of Desktop Manufacturing.  Desktop Manufacturing refers to the capability to contain the entire manufacturing process for an object within the physical (and to some degree, financial) constraints of the typical desktop environment.
@@ -47,7 +47,11 @@ At the time of this books writing, the average cost of a personal 3D printer is 
 As Reprap designs evolve, some branches of the family tree focused on self-replication require fewer and fewer of these “minerals”, making Dr. Bowyer's dream more and more of a reality.  Even components that seem impossible to print like motors and electronics are beginning to be realized by modifying their designs, inventing new technologies and adding capabilities to their parent printer's design.
 
 
+INSERT modern inexpensive printer image
 
+INSERT 3d printed motor image
+
+INSERT 3d printed circuit image
 
 
 The capabilities needed for a 3d printer to self-replicate happen to cover the same areas needed to produce most modern consumer goods, so by setting this as the baseline goal of the Reprap project, the result is printers that not only can create copies of themselves, but create many other goods as well.  As these printers replication capabilities increase, the range of other things they can produce increases exponentially.  Ten years ago the idea of such a device was unimaginable by the general public, even though the foundations for such technology had existed for more than a century and had been in use for decades.  By simply opening up the design, and establishing the goal of self-replication, the Reprap project (like the personal computer before it) made possible an era of invention and innovation that simply would not exist if 3D printing were to have remained under the lock and key of closed commercial use.

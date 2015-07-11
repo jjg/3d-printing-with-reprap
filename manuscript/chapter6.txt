@@ -20,8 +20,9 @@ When I built my first printer I tried to maintain a very structured journal of t
 
 What I took away from this is the value of having a time-line of my work on this project and I while I didn't change the way I casually cataloged this information, I did make an effort to write down more when I started work on solving a particular problem or trying to improve my output in a specific way.
 
+INSERT image  of ribbed egg
 
-
+INSERT image of smooth egg
 
 ##Study other's work
 
@@ -31,9 +32,11 @@ With the wider availability of off-the-shelf printers most peoples first experie
 
 I have a number of books that are nothing more than catalogs of various mechanisms that show different ways to move physical objects around.  Cranks, gears, cams, etc. have all been extensively engineering throughout history and much of this information is available either on-line or in old dusty books in your local public library.  What's particularly cool about these old books is that a lot of them have mechanisms that are not seen very often anymore because they have been replaced with less expensive electric or electronic alternatives more suitable to mass production, but with the ability to create complex mechanical parts on your desk in the form of a 3D printer these old mechanisms can be used to solve modern problems in a cost-effective (or at least more fun to watch) way.
 
+INSERT image of mechanical drawing
 
 Aside from the use as reference material to solve problems in existing designs, I've found just flipping through these books can inspire new ideas as well, and I've designed several devices simply as an excuse to put a clever design I came across in a book to use.  You may have noticed that many extruders use v-shaped “herringbone” gears, these gears are not very common in common contemporary use because they are difficult to manufacture using common mass-production techniques, but they are very good at delivering force with precision, and since it's not much harder for a 3D printer to print these gears instead of the more familiar straight-cut gear, you see them used in a lot of things designed to be printed.  This is an example of using a part or design that is impractical for common mass-produced goods where the manufacturing cost needs to be justified by the selling price of the item makes sense when you have the means of producing complex parts inexpensively on-hand.
 
+INSERT image of tantilus gear
 
 In fact, the availability of 3D printing has caused something of a resurgence in mechanical design, and some of the purely-mechanical devices and machines that have gone by the wayside over the last century are enjoying a comeback now that it is possible to produce the parts used by these machines with access to a full machine shop (and the associated skills and materials necessary to use one).
 
@@ -59,6 +62,7 @@ The beauty of the open-nature of the Reprap project is that it leverages the min
 
 It's worth mentioning that even if your printer wasn't brought into this world as a Reprap that is can still benefit from this capability, to the degree that several commercial 3D printing companies recommend that the first prints a new owner makes are parts for the machine that they have improved since the date of manufacture.
 
+INSERT image of printerbot upgrade parts download
 
 While the ability for a designer or manufacturer to send improved parts to customers electronically is revolutionary, it's not even the coolest part.  During the design of a machine engineers make compromises to improve performance in one area that diminish performance in another.  These choices are guided by what the company sees as the primary market for the machine and are not taken lightly, but the result can be a compromise that is good for the majority but might not be exactly right for your personal application, or perhaps one application you have in mind at a certain time.
 
@@ -66,12 +70,17 @@ With the Reprap you can “undo” these compromises, and you can make new ones 
 
 Remember those two eggs discussed above?  The journaling process helped me see a pattern to the error across multiple models, and led me to a few theories as to what the cause was.  I experimented with several software settings to see if I could eliminate the problem but it became apparent that the whole problem wasn't contained within the software configuration.  A closer look at the error indicated that the shape of the threaded rod used in the Z axis of the printer was being impressed upon the part, but what could be done about it?  Before I could answer that, I had to understand how it was happening.
 
+INSERT image of wavy twisty cup
 
 In my case the cause was that the Z axis rod was the same diameter as the smooth rod that guides the Z axis.  This is a problem because threaded rod is often imperfect, and the smooth rod used to overcome these imperfections, being the same diameter, wasn't strong enough to resist being moved by the bends in the threaded rod.  So I tried a number of new parts designed to overcome this.
 
+INSERT image of wavy z-axis isolator
+
+INSERT image of orange z-axis isolators
 
 This required several lengthy experiments that took place over a number of weeks (another example of where a good journal was critical) but eventually I found a combination of modifications that completely eliminated this error from my prints.
 
+INSERT image nice fox print 
 
 Over time, I was able to further improve the parts I used to eliminate this error to overcome limitations of their design or address other problems that became more visible now that the average quality of my prints improved.
 
