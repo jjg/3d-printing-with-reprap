@@ -1,11 +1,22 @@
-# Chapter 8: What's Next?
+#Chapter 8: Projects
 
-##Practice
+##Introduction
 
-##Teach
+Uncategorized list of project ideas
+* Print your genome
+* Print a replacement part 
+* Mathematical vase
+* Your home
+*
+ 
+##Easy designs & safe prints
 
-##Learn more about modeling
+##Challenging designs & risky prints
 
-##Learn more about printing
+##Thinks that move
 
-##Build your own printer
+##Things that do work
+
+##Things that look beautiful
+
+##Things that 3D printers do best
