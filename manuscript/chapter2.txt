@@ -51,7 +51,7 @@ As Reprap designs evolve, some branches of the family tree focused on self-repli
 
 ![A stepper motor (the heart of many Reprap designs) itself printed on a Reprap printer](images/chapter_2/Stepper Small 1.jpg)
 
-![It's becoming possible to print event the electronic components of 3D printers!](images/chapter_2/printed_electronics_caresionco.jpg)
+![It's becoming possible to print event the electronic components of 3D printers!](images/chapter_2/printed_electronics_cartesianco.jpg)
 
 
 The capabilities needed for a 3d printer to self-replicate happen to cover the same areas needed to produce most modern consumer goods, so by setting this as the baseline goal of the Reprap project, the result is printers that not only can create copies of themselves, but create many other goods as well.  As these printers replication capabilities increase, the range of other things they can produce increases exponentially.  Ten years ago the idea of such a device was unimaginable by the general public, even though the foundations for such technology had existed for more than a century and had been in use for decades.  By simply opening up the design, and establishing the goal of self-replication, the Reprap project (like the personal computer before it) made possible an era of invention and innovation that simply would not exist if 3D printing were to have remained under the lock and key of closed commercial use.
