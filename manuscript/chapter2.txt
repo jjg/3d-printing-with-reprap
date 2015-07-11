@@ -19,7 +19,7 @@ Through the 1990's, rapid prototyping changed the way that product research and 
 ##The RepRap Project
 In 2005, Dr. Adrian Bowyer began The RepRap Project with the goal of creating a 3d printer that was capable of printing copies of itself.  Dr. Bowyer had experienced the awesome power of 3d printing at the University of Bath, and realized the potential for these machines if they were made available outside of the University laboratory or corporate R&D department, but up until this point 3d printers were so expensive to purchase and operate that only the largest companies and university’s could afford them.
 
-INSERT reprap blog first post image
+![](images/chapter_2/reprap_blog_first_post.png)
 
 By designing the machine to self-replicate, the cost of each generation goes down as the quality of the output of each generation goes up.
 
@@ -29,7 +29,7 @@ By providing the RepRap designs as Open Source, and carrying-out the development
 
 Today there are numerous descendants from the original RepRap Darwin design, some are simply improvements on the original design, others have evolved into specialized machines that focus on producing parts with particular qualities but all can be related directly back to the original printer designed for the RepRap Project, and in fact most “consumer grade” 3d printers, whether they are RepRaps or not, are descended from this original design.
 
-INSERT reprap family tree image
+![](images/chapter_2/RFT_timeline2006-2012.png)
 
 ##Desktop Manufacturing
 With the introduction of the Reprap came the possibility of Desktop Manufacturing.  Desktop Manufacturing refers to the capability to contain the entire manufacturing process for an object within the physical (and to some degree, financial) constraints of the typical desktop environment.
@@ -41,17 +41,17 @@ The combination of inexpensive 3D modeling software and Reprap 3D printing techn
 ##3D Printing Today
 At the time of this books writing, the average cost of a personal 3D printer is $1000.00; an amount often considered to be the threshold for mainstream adoption of new consumer technology.
 
- Additionally, there are ready-to-use printers available for as little as $500.00, and printers in kit form as cheap as $200.00.  Of course in keeping with Dr. Bowyer's vision, a sufficiently-motivated individual could create their own printer “from scratch” for even less by connecting with the Reprap community, securing a set of printed Reprap parts and creatively scrounging up the remaining “minerals” necessary to build a printer of their own.
+Additionally, there are ready-to-use printers available for as little as $500.00, and printers in kit form as cheap as $200.00.  Of course in keeping with Dr. Bowyer's vision, a sufficiently-motivated individual could create their own printer “from scratch” for even less by connecting with the Reprap community, securing a set of printed Reprap parts and creatively scrounging up the remaining “minerals” necessary to build a printer of their own.
 
 
 As Reprap designs evolve, some branches of the family tree focused on self-replication require fewer and fewer of these “minerals”, making Dr. Bowyer's dream more and more of a reality.  Even components that seem impossible to print like motors and electronics are beginning to be realized by modifying their designs, inventing new technologies and adding capabilities to their parent printer's design.
 
 
-INSERT modern inexpensive printer image
+![An inexpensive commercial desktop 3d printer decended from Reprap designs](images/chapter_2/makibox.jpg)
 
-INSERT 3d printed motor image
+![A stepper motor (the heart of many Reprap designs) itself printed on a Reprap printer](images/chapter_2/Stepper Small 1.jpg)
 
-INSERT 3d printed circuit image
+![It's becoming possible to print event the electronic components of 3D printers!](images/chapter_2/printed_electronics_caresionco.jpg)
 
 
 The capabilities needed for a 3d printer to self-replicate happen to cover the same areas needed to produce most modern consumer goods, so by setting this as the baseline goal of the Reprap project, the result is printers that not only can create copies of themselves, but create many other goods as well.  As these printers replication capabilities increase, the range of other things they can produce increases exponentially.  Ten years ago the idea of such a device was unimaginable by the general public, even though the foundations for such technology had existed for more than a century and had been in use for decades.  By simply opening up the design, and establishing the goal of self-replication, the Reprap project (like the personal computer before it) made possible an era of invention and innovation that simply would not exist if 3D printing were to have remained under the lock and key of closed commercial use.
