@@ -36,7 +36,7 @@ I have a number of books that are nothing more than catalogs of various mechanis
 
 Aside from the use as reference material to solve problems in existing designs, I've found just flipping through these books can inspire new ideas as well, and I've designed several devices simply as an excuse to put a clever design I came across in a book to use.  You may have noticed that many extruders use v-shaped “herringbone” gears, these gears are not very common in common contemporary use because they are difficult to manufacture using common mass-production techniques, but they are very good at delivering force with precision, and since it's not much harder for a 3D printer to print these gears instead of the more familiar straight-cut gear, you see them used in a lot of things designed to be printed.  This is an example of using a part or design that is impractical for common mass-produced goods where the manufacturing cost needs to be justified by the selling price of the item makes sense when you have the means of producing complex parts inexpensively on-hand.
 
-![](images/chapter_6/herringbone.jpg)
+![](images/chapter_6/chapter-6-herringbone.jpg)
 
 In fact, the availability of 3D printing has caused something of a resurgence in mechanical design, and some of the purely-mechanical devices and machines that have gone by the wayside over the last century are enjoying a comeback now that it is possible to produce the parts used by these machines with access to a full machine shop (and the associated skills and materials necessary to use one).
 
@@ -62,7 +62,7 @@ The beauty of the open-nature of the Reprap project is that it leverages the min
 
 It's worth mentioning that even if your printer wasn't brought into this world as a Reprap that is can still benefit from this capability, to the degree that several commercial 3D printing companies recommend that the first prints a new owner makes are parts for the machine that they have improved since the date of manufacture.
 
-![](images/chapter_6/chapter-6-printerbot.png)
+![](images/chapter_6/chapter-6-printrbot.png)
 
 While the ability for a designer or manufacturer to send improved parts to customers electronically is revolutionary, it's not even the coolest part.  During the design of a machine engineers make compromises to improve performance in one area that diminish performance in another.  These choices are guided by what the company sees as the primary market for the machine and are not taken lightly, but the result can be a compromise that is good for the majority but might not be exactly right for your personal application, or perhaps one application you have in mind at a certain time.
 
