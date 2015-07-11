@@ -58,6 +58,6 @@ The capabilities needed for a 3d printer to self-replicate happen to cover the s
 
 
 ##References:
-Rapid Prototyping in Europe and Japan - http://www.wtec.org/pdf/rp_vi.pdf
-3d printed stepper motor - http://www.shapeways.com/forum/index.php?t=msg&th=13766&start=0&
-3d printed circuit - http://www.cartesianco.com
+* Rapid Prototyping in Europe and Japan - http://www.wtec.org/pdf/rp_vi.pdf
+* 3d printed stepper motor - http://www.shapeways.com/forum/index.php?t=msg&th=13766&start=0&
+* 3d printed circuit - http://www.cartesianco.com
