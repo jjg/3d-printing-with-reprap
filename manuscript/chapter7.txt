@@ -35,7 +35,7 @@ Before you can upload a design you'll need to gather a few things:
 
 One you have these files gathered click the blue “+ Add design” button at the top of the page to get started.
 
-![](images/chapter_7/youmagine new design.png)
+![](images/chapter_7/youimagine new design.png)
 
 You don't have to provide all the information requested by the New Design form, but the more you provide the more useful your model will be to others, so it's worth putting in a little extra effort.  For this example we'll share the snowman we created in Chapter 3, here's how I filled out the form:
 
