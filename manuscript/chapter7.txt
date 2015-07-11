@@ -135,7 +135,7 @@ Now it's time to fire up a console!  Once you have a console open, change direct
 
     git clone <clone_url>
 
-Replace <clone_url> with the text you copied from the Github page.  For example, here's what the command for my snowman repository looks like:
+Replace `<clone_url>` with the text you copied from the Github page.  For example, here's what the command for my snowman repository looks like:
 
     git clone https://github.com/jjg/snowman.git
 
