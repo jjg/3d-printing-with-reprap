@@ -192,6 +192,8 @@ Of course, there is a lot more that Github can do and we've only just scratched 
 
 With all these cool ways to share your work electronically it's easy to forgot about good-old-fashioned show-and-tell, but don't overlook it.
 
+INSERT image of sharing work IRL
+
 Sharing your work electronically is convenient for both you and the people you know online, but what about the  people offline?  Most people who frequent online establishments like Twitter and Facebook have heard of 3d printing and probably even know someone working with it, but there's a lot of people who are not as connected as you may be, but might have a lot to add to the conversation about 3d printing and desktop manufacturing.
 
 Much of the technology used in 3d printing isn't new, in fact the Gcode that's used to control Reprap printers goes back to the 1960's and has been used by manufacturing equipment (and the people who program them) for decades.  Additionally, the aspects of Cartesian manufacturing equipment goes back further, and there are large established communities of experts in these fields who are not necissarilly an active part of your online communities.
