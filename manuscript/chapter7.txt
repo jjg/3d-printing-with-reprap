@@ -133,11 +133,11 @@ It doesn't look like much yet does it?  Since Github revolves around Git, most o
 
 Now it's time to fire up a console!  Once you have a console open, change directories to where you want to keep your local copy of the repository.  This local copy will be synchronized by Git with the repository on Github, so put it somewhere handy.  Once you're in the right place, type the following command into the console:
 
-git clone <clone_url>
+    git clone <clone_url>
 
 Replace <clone_url> with the text you copied from the Github page.  For example, here's what the command for my snowman repository looks like:
 
-git clone https://github.com/jjg/snowman.git
+    git clone https://github.com/jjg/snowman.git
 
 Press “enter” and you should see something like this:
 
@@ -151,7 +151,7 @@ The next step is to copy the files you want to post to the repository into this 
 
 Now before we can “push” these files to the repository on Github, we need to tell Git we want them included in the repository (copying them into the directory isn't enough).  There's a few ways to do this, but the fastest one is to issue the following command in the repository directory:
 
-git add .
+    git add .
 
 This will add all the files in the repository directory to the repository, and Git will start tracking changes made to them.  Speaking of changes, this is a good time to update that README.md file with a better description of our model.
 
@@ -161,7 +161,7 @@ With the changes made we're ready to push, but first we have to commit the chang
 
 Back at the console, type the following command in the repository directory:
 
-git status
+    git status
 
 You should see something like this:
 
@@ -169,11 +169,11 @@ You should see something like this:
 
 What Git's telling us is that README.md was modified, and snowman_detailed.stl was added to the repository.  This looks right, so we'll commit the changes with the command below:
 
-git commit -a -m “added snowman stl file and updated readme”
+    git commit -a -m “added snowman stl file and updated readme”
 
 This command tells Git to commit all changes (-a) and to add the commit message (-m) we provided in quotes.  Commit messages are stored each time you commit changes to the repository and are very useful as a way to know what changed over time.  If you leave off the -m, you'll still have to provide a commit message but Git will invoke the system text editor to do so.  With the changes committed, there's just one more thing to do:
 
-git push
+    git push
 
 You will likely be prompted to enter your Github username and password, and then Git will push the committed changes up to Github.  If all goes well you should be able to refresh the Github repository page in your web browser and see the changes.
 
@@ -186,9 +186,6 @@ Now remember when I said Github doesn't do much to go out-of-the way to support 
 Github knows that STL files are 3d models, and renders them accordingly in the browser.  It's a little thing, but it's very handy, and saves you the trouble of having to add image files to the repository so others can get a preview of the model before downloading it.
 
 Of course, there is a lot more that Github can do and we've only just scratched the surface.  But from this example you can see how Github provides an alternative way of managing and sharing your 3d models that might suit some people better than the way specialty 3d repositories work.
-
-
-
 
 
 ##Share your work in real life
