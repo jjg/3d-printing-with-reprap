@@ -23,6 +23,7 @@ Pronterface is open-source software and can be obtained by visiting the Github p
 You may remember Cura from Chapter 4 where we used it to generate Gcode from the STL file of our 3D model.  In addition to performing slicing duties, Cura also provides basic host software functionality, and can unify the slicing and printing steps in one piece of software.
 
 INSERT screenshot of Cura
+![The Cura interface with some 3D printer parts loaded and ready for slicing](images/chapter_5/cura.png)
 
 Cura's tools for printer control are much more basic than Pronterface, but for most jobs they are sufficient.  Cura is created and maintained by the Ultimaker company whose printers provide a nice interface on the printer itself to perform the fine-tuning steps that Pronterface provides in the host software.
 
@@ -39,7 +40,7 @@ This also makes it easy to monitor the progress of a print remotely (which comes
 
 Octoprint also provides an API which makes it easy to interface it with other pieces of software.  One example is an app for the Pebble smartwatch that allows you to monitor a print job right on your wrist!
 
-![You can control Octoprint from almost anywhere, including your wrist](images/chapter_5/octowatch.JPG)
+![You can control Octoprint from almost anywhere, including your wrist](images/chapter_5/octowatch2.jpg)
 
 Octoprint is also open-source software which can be downloaded from http://octoprint.org.  There's also a custom Raspberry Pi SD Card image that can be used to create a pre-configured Octoprint host by simply downloading the image, copying it to an SD card and inserting it into a Raspberry Pi board.
 
