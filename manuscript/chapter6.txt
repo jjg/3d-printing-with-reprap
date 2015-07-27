@@ -80,7 +80,7 @@ In my case the cause was that the Z axis rod was the same diameter as the smooth
 
 This required several lengthy experiments that took place over a number of weeks (another example of where a good journal was critical) but eventually I found a combination of modifications that completely eliminated this error from my prints.
 
-![](images/chapter_6/chapter-6-nowobblefox.JPG)
+![](images/chapter_6/chapter-6-nowobblefox.png)
 
 Over time, I was able to further improve the parts I used to eliminate this error to overcome limitations of their design or address other problems that became more visible now that the average quality of my prints improved.
 
