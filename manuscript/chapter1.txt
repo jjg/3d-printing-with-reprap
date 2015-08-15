@@ -1,9 +1,11 @@
 # Chapter 1: Introduction
 
+
 ## Who should read this book
 This book is for anyone curious about 3d printing, for the purpose of completing a specific project or anything in-between.  The book is broken down into two major sections.  The first section is an introduction to the process of designing 3d models and printing these objects.  The second part of the book is a collection of projects selected to exercise the skills taught by the first part and to give you an overview of the sort of applications 3D printing can be used for.
 
 You are encouraged to jump-around and read chapters that cover subjects you'd like to learn more about, or particular areas where you'd like to improve on your current work.  You may like to dive directly into the example projects.  Each project references the relevant chapters in the first section of the book that explain the underlying principles or techniques involved in completing the project should you need additional information.
+
 
 ## What is 3D printing?
 3D printing is the process of turning an electronic three-dimensional model into a real, physical, tangible object.
@@ -26,9 +28,6 @@ If you were to print this email using your printer, the result would be a physic
 
 When the first layer is complete, instead of ejecting the print surface (as the paper was ejected in the 2d printing example), the print head then moves upward along the Z axis and prints another layer on top of the first.  This repeats until the end of the model file is reached and the completed object is ejected from the printer.
 
-There are many different types of 3d printer (just as there are 2d printers) but most current designs share this same process of building a model layer-by-layer.  This technique is referred to as "additive manufacturing" (AM) to differentiate it from methods that create objects by removing material from a larger piece (such as milling, laser cutting, etc.).
-
-This book will focus on these AM-type machines, which have been around for decades but had been available only to large corporations and educational facilities until the Reprap project made it possible for individuals to have access to these machines.
 
 ## What you'll need for projects
 If you plan to complete the projects, here is what you will need:
@@ -42,11 +41,14 @@ Other tools may come in handy, and will be described in the chapters where they 
 
 The two most important tools of course are your own interest in the subject and patience.  3D printing has been around a while, but its use at home is a very young practice and should always be looked at as experimental.  By taking this attitude toward your projects the work will be more pleasant and less frustrating.  If you look at each print in terms of what you can learn from it (as opposed to achieving a specific result) you'll enjoy it a lot more.
 
+
 ## What is Reprap?
-A RepRap is a type of 3d printer defined by one characteristic: it is designed to be capable of producing copies of itself.  To you this might sound fantastic (or obvious), but to varying degrees all RepRap printers are able to produce some percentage of the parts necessary to produce replicas of themselves.  More information on the benefits and history of RepRap printers and the RepRap project can be found in Chapter 2.
+A RepRap is a type of 3d printer defined by one characteristic: it is designed to be capable of producing copies of itself.  This might sound fantastic, but to varying degrees, all RepRap printers are able to produce some percentage of the parts necessary to create replicas of themselves.  There is two key benefits to this approach:  The first is that 3D printers encompass almost all of the components found in modern technology (mechanical engineering, electrical engineering, software development, etc.).  A machine capable of producing a 3D printer should be capable of producting almost anything.  The second (and perhaps more important) is that a printer that can reproduce makes 3D printing technology avaliable to a much wider audience than machines which need to be built in specialized factories.  In this way a RepRap is akin to a seed, which when planted produces a bushel of fruit which in turn bear additional seeds.  I call this the "Johnny Appleseed" effect, and not only does it allow more people to utilize the power of 3D printing, but it allows forces of evolution to directly improve the printers generation after generation.  This evolution is only possible because the RepRap is Open Source project, which means that anyone can make a copy or a modification without fear of violating a patent, copyright or other intellectual property law.
+
 
 ## Anatomy of a 3D printer
-Thanks to the open nature of the Reprap project, 3D printers are evolving rapidly and by the time you read this there will undoubtedly be types of printers available that didn't exist when this book went to press.  However there are a number of components that most 3D printers share, either literally or at least conceptually.
+3D printers are evolving rapidly.  By the time you read this, there will undoubtedly be printers available that didn't exist when this book went to press.  There are a number of components that most 3D printers share, either literally or at least conceptually.
+
 
 ### Printhead
 Printhead is a generic term that you don't see used too often in conversation about 3D printing because often more printer-specific terms are used, but the principle of a printhead exists in all current 3D printer designs.  The heads job is to deposit material in a precise fashion in the location determined by the axis.  In filament-based printers, the head consists of several sub-components that work together to prepare and deliver plastic precisely to the model.  These components are commonly organized into two groups referring to their operating temperature; the **hot-end** and the **cold-end**.
@@ -67,6 +69,7 @@ INSERT RESIN PRINTER ILLUSTRATION
 
 There is another type of printhead that is very different from the ones describe above.  A resin-based printer has none of the components described above, however it effectively still has a printhead in the form of light that strikes the resin, turning it from liquid to solid.  As light is much lighter than motors and gears and the like a resin printers "head" can move much faster and more precisely than a extrusion-based printer however its speed is limited by the time it takes the resin to transition from liquid to solid.  This means that resin-based printers tend to be much slower than extrusion-based printers, but the resolution of a resin-based printer is much higher than an extrusion-based printer (at least theoretically).  In practice there are still mechanical parts that limit the resolution in most resin-based designed, but even so they commonly exceed the resolution of extrusion-based printers by an order of magnitude.
 
+
 ### Axis
 As mentioned above the print head rides along the printers axis, whose job it is to position the head where material is needed.  The original Reprap designs used three linear axis to move the printhead along the X, Y and Z dimensions.  The X and Y are similar to a 2D printer, and the Z axis simply moves the X and Y axis away from the print bed as each layer is laid down.
 
@@ -80,6 +83,7 @@ Recently new axis types have emerged from the Reprap project.  These designs eme
 
 In addition to mechanical axis types, resin printers use a hybrid of mechanical and optical axis components.  Resin printers work by directing light on to a liquid which, when exposed to this light, turns solid.  The most common resin printer design uses a video projector to project an image of each layer of a model on to the surface of the liquid resin.  As it hardens, a mechanical Z axis adjusts the position of the hardened material so that the next layer can be projected on top of it (technically this can happen on the top or bottom of the model relative to the earth, so I use the term top here relative to the model, not gravity).
 
+
 ### Bed
 The bed is where the model is built.  The first layer of the print is laid-down on the print bed, and subsequent layers are then added to the previous ones.  In most designs the print bed moves in one of the printer's axis (commonly X or Y), allowing the printed plastic to move under the print head.  Key attributes of the bed are that it is "tram" with the nozzle, meaning that in any position the nozzle is always the same distance from the surface of the bed (sometimes incorrectly referred to as "level").  The other important aspect of the print bed is adhesion, or the ability for the printed plastic to stick to the bed and stay in place.
 
@@ -88,6 +92,7 @@ Beds that move in the Y axis are somewhat simpler to design, but the lateral mov
 ![](images/chapter_1/bed.jpg)
 
 Depending on the materials used, some print beds are heated to reduce curling that can happen as the extruded plastic cools and shrinks.  When this cooling happens at different rates in a print it can cause the corners or edges of the base of a model lift-up from the bed, distorting the model and increasing the chances of it coming loose from the bed.  By heating the bottom of the model, curling can be reduced in plastics that are more prone to it like ABS.
+
 
 ### Electronics
 
