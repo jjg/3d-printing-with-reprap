@@ -1,31 +1,46 @@
 # Chapter 1: Introduction
 
+## Who should read this book
+This book is for anyone curious about 3d printing, for the purpose of completing a specific project or anything in-between.  The book is broken down into two major sections.  The first section is an introduction to the process of designing 3d models and printing these objects.  The second part of the book is a collection of projects selected to exercise the skills taught by the first part and to give you an overview of the sort of applications 3D printing can be used for.
+
+You are encouraged to jump-around and read chapters that cover subjects you'd like to learn more about, or particular areas where you'd like to improve on your current work.  You may like to dive directly into the example projects.  Each project references the relevant chapters in the first section of the book that explain the underlying principles or techniques involved in completing the project should you need additional information.
+
 ## What is 3D printing?
-Simply put, 3D printing is the process of turning an electronic three-dimensional model and turning into a real, physical, tangible object.
+3D printing is the process of turning an electronic three-dimensional model into a real, physical, tangible object.
 
 ![](images/chapter_1/3dprintingwithreprap01_01.jpg)
 
-This might sound complicated, but it's only slightly more complex than printing two-dimensional objects (like this page) which you're probably already familiar with.
+This is only slightly more complex than familiar two-dimensional printing like this page.
 
-For example, if you start writing an email you're creating an electronic model of a two-dimensional object.  If you were to print this email using your printer, the result would be a physical, tangible object built from the 2d model you created.
+For example, when writing an email you are creating an electronic model of a two-dimensional object.  This model contains enough information to know what space on the sheet of paper need to be filled in with ink (the printed area) and what space can be left blank (the page you are printing on).  Inside your printer, the model (email) is read line-by-line and a printhead in the printer squirts ink on the paper one line at a time.  As each letter is printed, the print head moves and prints the next letter.  This is the "X" axis.  When the end of a line is reached, the paper is moved and the print head prints the next line.  This is the "Y" axis.  At the end of the model file (email), the printer moves the paper along the Y axis to eject the paper.  A more complicated model might include information about multiple colors and complex formatting like tables, pictures, etc.
 
 ![An email is a digital model of a old-fashioned letter](images/chapter_1/3dprintingwithreprap01_02.jpg)
 
-This "model" (the email message) contains enough information to know what space on the sheet of paper need to be filled in with ink (black) and what space can be left blank (white).  A more complicated model might include information about multiple colors as well, and depending on the capabilities of the printer, the paper that comes out might have colored letters (if it is a color printer) or black-and-white only, if that's all the printer can do.
+If you were to print this email using your printer, the result would be a physical, tangible object built from the 2d model you created.
 
-Inside your printer, the model (email) is read line-by-line and a printhead in the printer squirts ink on the paper one line at a time.  As each letter is printed, the head moves (this is the "X" axis) and  prints the next letter.  When the end of a line is reached, the paper is moved ("Y" axis) and the head prints the next line.  When the end of the model file (email) is reached, the printer moves the paper in the Y axis to eject it.
+![A typical computer printer the ink cartridge moves along the the X axis while the paper moves along the Y axis](images/chapter_1/3dprintingwithreprap01_03.jpg)
 
-![A typical computer printer moves the paper along the Y axis while the ink cartridge moves in the X](images/chapter_1/3dprintingwithreprap01_03.jpg)
-
-3D printing is strikingly similar, but for and addition of a third axis, the "Z" axis.  A model is constructed using an editor (editors are discussed in detail in Chapter 3), which is then sent to the printer.  The model is then read line-by-line, moving the printhead along the X and Y axis just like the 2d printer, but squirting plastic instead of ink onto the print surface until the entire layer is complete.
+3D printing is strikingly similar.  It simply adds a third axis, the "Z" axis.  First, a model is constructed using modeling software (just as an email is constructed using an email program, or a document is constructed using a word processor).  The model is sent to the printer and read line-by-line, moving the printhead along the X and Y axis creating a the first layer of the print, just like the 2d printer.  Instead of ink, plastic is *extruded* (a fancy word for "squeezed through a hole") onto the print surface until the layer is complete.
 
 ![The 3D printer adds a third axis (Z) to add depth](images/chapter_1/3dprintingwithreprap01_04.jpg)
 
-The key difference is that instead of ejecting the print surface (as the paper was ejected in the 2d printing example), the print head then moves upward (Z axis) and prints another layer on top of the first.  This repeats until the end of the model file is reached and the completed object is then "ejected" from the printer.
+When the first layer is complete, instead of ejecting the print surface (as the paper was ejected in the 2d printing example), the print head then moves upward along the Z axis and prints another layer on top of the first.  This repeats until the end of the model file is reached and the completed object is ejected from the printer.
 
 There are many different types of 3d printer (just as there are 2d printers) but most current designs share this same process of building a model layer-by-layer.  This technique is referred to as "additive manufacturing" (AM) to differentiate it from methods that create objects by removing material from a larger piece (such as milling, laser cutting, etc.).
 
 This book will focus on these AM-type machines, which have been around for decades but had been available only to large corporations and educational facilities until the Reprap project made it possible for individuals to have access to these machines.
+
+## What you'll need for projects
+If you plan to complete the projects, here is what you will need:
+
+* A computer
+* Access to a 3D printer (either your own, a friend's, at a local hackerspace or via a printing service as discussed in Chapter 5
+* A notebook
+* A camera
+
+Other tools may come in handy, and will be described in the chapters where they are introduced (a complete list of tools is included in Appendix A).
+
+The two most important tools of course are your own interest in the subject and patience.  3D printing has been around a while, but its use at home is a very young practice and should always be looked at as experimental.  By taking this attitude toward your projects the work will be more pleasant and less frustrating.  If you look at each print in terms of what you can learn from it (as opposed to achieving a specific result) you'll enjoy it a lot more.
 
 ## What is Reprap?
 A RepRap is a type of 3d printer defined by one characteristic: it is designed to be capable of producing copies of itself.  To you this might sound fantastic (or obvious), but to varying degrees all RepRap printers are able to produce some percentage of the parts necessary to produce replicas of themselves.  More information on the benefits and history of RepRap printers and the RepRap project can be found in Chapter 2.
@@ -81,22 +96,3 @@ Depending on the materials used, some print beds are heated to reduce curling th
 The brains of the printer.  Most 3D printers are controlled by regular computers, or by little computers like the Raspberry Pi but in addition to this they require dedicated processors so they can respond immediately to information coming in from temperature sensors and control motors with greater accuracy and reliable timing than would be possible with a general-purpose computer thats running other software, etc.  Most printer electronics are capable of printing  on their own, using files stored on an SD card but often they are tethered to a regular desktop or laptop computer to provide greater control and feedback about the printing process to the operator.
 
 The most common electronics package for Reprap printers is RAMPS (RepRap Arduino Mega Pololu Shield), coupled with a standard Arduino Mega.  RAMPS is very flexible, supporting variable numbers of motors, sensors, etc. but this flexibility comes with complexity and cost so alternatives have been developed that trade flexibility for lower manufacturing cost.
-
-## Who should read this book
-I've written this book for anyone who would like to know more about 3d printing simply out of curiosity, for the purpose of completing a specific project or anything in-between.  The book is broken down into two major sections.  The first section is an introduction to the process of designing 3d models and printing these objects.  The second part of the book is a collection of projects selected to exercise the skills taught by the first part and to give you an overview of the sort of applications 3D printing can be used for.
-
-If you already have some experience with 3D printing, you're encouraged to jump-around and read the chapters that cover subjects you'd like to learn more about, or particular areas where you'd like to improve on your current work.  You may also like to dive directly into the example projects, and if you find yourself lost, each project references the relevant chapters in the first section of the book that explain the underlying principles or techniques involved in completing the project.
-
-## What you'll need
-While this book can be read by anyone as an introduction to 3D printing processes and terminology, it's more fun if you can actually do some of the projects in the book.  If you'd like the practical experience, here's a list of things that will come in handy:
-
-* A computer
-* Access to a 3D printer (either your own, a friend's, at a local hackerspace or via a printing service as discussed in Chapter 5
-* A notebook
-* A camera
-
-Other tools may come in handy, and will be described in the chapters where they are introduced (a complete list of tools is included in Appendix A).
-
-The two most important tools of course are your own interest in the subject and patience.  3D printing has been around awhile, but its use at home is a very young practice and should always be looked at as experimental.  By taking this attitude toward your projects the work will be more pleasant and less frustrating.  If you look at each print in terms of what you can learn from it (as opposed to achieving a specific result) you'll enjoy this a lot more.
-
-
